@@ -97,8 +97,11 @@ $(document).ready(function () {
     $('.filter-item>p').click(() => {
       event.currentTarget.classList.toggle('filter-active-item');
       event.currentTarget.querySelector('svg').classList.toggle('flip-icon')
-      
-      event.currentTarget.nextElementSibling.classList.toggle('open-filter')
+      if(event.currentTarget.nextElementSibling.id === 'colors_checkboxes'){
+        event.currentTarget.nextElementSibling.classList.toggle('open-filter-flex')
+      } else {
+        event.currentTarget.nextElementSibling.classList.toggle('open-filter')
+      }
     })
 
 
@@ -223,6 +226,5 @@ $(document).ready(function () {
         max: 10000,
         from: 50,
         to: 5000,
-        onChange
       });
 });
