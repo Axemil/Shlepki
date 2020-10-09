@@ -682,10 +682,53 @@ header {
     right: 8px;
     top: -6px;
 }
-
+.desktop-middle-nav-item>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.desktop-profile-pop-up{
+    display: none;
+    width: 200px;
+    padding: 30px 20px;
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.48)), linear-gradient(0deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.48)), #F8F8F8;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.13);
+    bottom: -200px;
+    z-index: 100000;
+}
+#profile-nav-item:hover .desktop-profile-pop-up{
+    display: block;
+}
+.desktop-profile-pop-up a{
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: center;
+}
+.desktop-profile-pop-up a:last-child{
+    margin: 0;
+}
+.desktop-profile-pop-up a img{
+    margin: 0 12px 0 0;
+}
+.desktop-profile-pop-up a span{
+    font-family: var(--Fira-font);
+    font-weight: 400;
+    font-size: 15px;
+}
 .desktop-middle-nav-item:last-child {
     margin: 0 5px 0 7px;
 }
+
+.main-color-text{
+    color: var(--main-color);
+}
+.main-color-warning, .sale{
+    color: var(--attention-color);
+}
+
 
 .desktop-middle-nav-item img {
     width: 24px;
