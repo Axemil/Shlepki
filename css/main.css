@@ -1200,7 +1200,6 @@ body {
 
 .main-pluses_item {
     text-align: center;
-    margin: 0 0 33px;
 }
 
 .main-pluses_icon,
@@ -1271,10 +1270,15 @@ body {
     margin: 0;
 }
 
+.main-block-wrapper{
+    background: rgb(246, 246, 246);
+}
+
 .main-navigation {
     max-width: 1170px;
     width: 100%;
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
+    padding: 36px 0 33px 0;
 }
 
 .main-navigation ul {
@@ -2386,7 +2390,8 @@ footer {
         justify-content: space-evenly;
         width: 100%;
         max-width: 1170px;
-        margin: 60px 0 0 0;
+        margin: 0 auto;
+        padding: 30px 0 0 0;
     }
 
     .main-pluses-line_1 {
