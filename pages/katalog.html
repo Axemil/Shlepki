@@ -222,7 +222,7 @@
                         </div>
                      </div>
                      <div class="desktop-middle-nav">
-                        <div href="" id="profile-nav-item" class="desktop-middle-nav-item">
+                        <div id="profile-nav-item" class="desktop-middle-nav-item">
                            <a href="">
                               <img src="../img/icons/profile.svg" alt="">
                               <span>Профиль</span>
@@ -242,11 +242,55 @@
                            <div class="desktop-middle-nav-item_pop-num">2</div>
                            <p>Избранное</p>
                         </a>
-                        <a href="" class="desktop-middle-nav-item">
-                           <img src="../img/icons/cartIcon.svg" alt="">
-                           <div class="desktop-middle-nav-item_pop-num">2</div>
-                           <p>Корзина</p>
-                        </a>
+                        <div id="cart-nav-item" class="desktop-middle-nav-item">
+                           <a href="">
+                              <img src="../img/icons/cartIcon.svg" alt="">
+                              <div class="desktop-middle-nav-item_pop-num">2</div>
+                              <p>Корзина</p>
+                           </a>
+                           <div class="desktop-cart-pop-up">
+                              <div class="desktop-cart-pop-up_title">
+                                 <h3>Корзина</h3>
+                                 <p><span>2</span> товара</p>
+                              </div>
+                              <div class="desktop-cart-pop-up_cart-full">
+                                 <div class="desktop-cart-pop-up_list">
+                                    <div class="desktop-cart-pop-up_list-item">
+                                       <img src="../img/images/cardImage1.jpg" alt="" class="desktop-cart-pop-up_list-item_img">
+                                       <div class="desktop-cart-pop-up_list-item-text">
+                                          <div class="desktop-cart-pop-up_list-item-text-title">Босоножки 00001-beige</div>
+                                          <div class="desktop-cart-pop-up_list-item-text-model">Модель: <span>Zoom-000002-beige</span></div>
+                                          <div class="desktop-cart-pop-up_list-item-text_value">кол 3</div>
+                                       </div>
+                                       <div class="desktop-cart-pop-up_list-item_price">480.00₴</div>
+                                    </div>
+                                    <div class="desktop-cart-pop-up_list-item">
+                                       <img src="../img/images/cardImage1.jpg" alt="" class="desktop-cart-pop-up_list-item_img">
+                                       <div class="desktop-cart-pop-up_list-item-text">
+                                          <div class="desktop-cart-pop-up_list-item-text-title">Босоножки 00001-beige</div>
+                                          <div class="desktop-cart-pop-up_list-item-text-model">Модель: <span>Zoom-000002-beige</span></div>
+                                          <div class="desktop-cart-pop-up_list-item-text_value">кол 3</div>
+                                       </div>
+                                       <div class="desktop-cart-pop-up_list-item_price">480.00₴</div>
+                                    </div>
+                                 </div>
+                                 <div class="desktop-cart-pop-up_final-price">
+                                    <p>К оплате: <span>3000₴</span></p>
+                                 </div>
+                                 <div class="desktop-cart-pop-up_wrapper_buttons">
+                                    <a href="" class="desktop-cart-pop-up_link-cart desktop-cart-pop-up_link">Перейти в корзину</a>
+                                    <a href="" class="desktop-cart-pop-up_link-order desktop-cart-pop-up_link">Оформить заказ</a>
+                                 </div>
+                              </div>
+                              <div class="desktop-cart-pop-up_cart-empty">
+                                 <img src="../img/icons/cartEmpty.svg" alt="" class="desktop-cart-pop-up_cart-empty_image">
+                                 <div class="desktop-cart-pop-up_cart-empty_text">
+                                    <p>Ваша корзина пуста</p>
+                                    <span>Но это легко исправить :)</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -417,7 +461,12 @@
                           </svg>                                
                      </p>
                      <div class="filter-block">
-                        
+                        <input type="text" class="js-range-slider" name="my_range" value="" />
+                        <div class="filter-prices_inputs_wrapper">
+                           <input class="filter-prices_input" type="number" name="min-price_input" id="min-price_input" value="50">
+                           <span class="filter-prices_input_line"></span>
+                           <input class="filter-prices_input" type="number" name="min-price_input" id="max-price_input" value="5000">
+                        </div>
                      </div>
                  </div>
                  <div class="filter-item">
@@ -608,8 +657,9 @@
                      <div class="filter-block">
                         <input type="text" class="js-range-slider" name="my_range" value="" />
                         <div class="filter-prices_inputs_wrapper">
-                           <input type="number" name="" id="">
-                           <input type="number" name="" id="">
+                           <input class="filter-prices_input" type="number" name="min-price_input" id="min-price_input" value="50">
+                           <span class="filter-prices_input_line"></span>
+                           <input class="filter-prices_input" type="number" name="min-price_input" id="max-price_input" value="5000">
                         </div>
                      </div>
                  </div>
