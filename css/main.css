@@ -1200,6 +1200,7 @@ body {
 
 .main-pluses_item {
     text-align: center;
+    margin: 0 0 20px 0;
 }
 
 .main-pluses_icon,
@@ -1278,7 +1279,7 @@ body {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    padding: 36px 0 33px 0;
+    padding: 36px 5px 33px 5px;
 }
 
 .main-navigation ul {
@@ -1618,6 +1619,30 @@ body {
 
 .filter-block label input {
     /* display: none; */
+}
+
+.filter-prices_inputs_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+.filter-prices_input{
+    width: 40%;
+    padding: 15px;
+    color: var(--color-text-secondary);
+    font-family: var(--FS-font);
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid var(--border-input-color-1);
+}
+.filter-prices_input_line{
+    width: 8px;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--color-icon);
 }
 
 #list_with_checkbox p {
@@ -1998,8 +2023,16 @@ footer {
 
     /* RANGE SLIDER */
 
+    /* .irs--flat{
+        background: var(--main-color);
+    } */
+
     .irs-min,
     .irs-max {
+        display: none;
+    }
+
+    .irs-single{
         display: none;
     }
 
@@ -2022,7 +2055,11 @@ footer {
     }
 
     .irs--flat .irs-handle>i:first-child:hover {
-        background: var(--main-color);
+        background: var(--main-color)!important;
+    }
+
+    .irs-to,.irs-from{
+        display: none;
     }
 
     /* SWIPER */

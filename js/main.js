@@ -218,13 +218,31 @@ $(document).ready(function () {
       }
       
       new Dropdown('.a-dropdown');
-    
 
-      $(".js-range-slider").ionRangeSlider({
+      const range_slider = $(".js-range-slider")
+
+      range_slider.ionRangeSlider({
         type: "double",
+        step: 10,
         min: 0,
         max: 10000,
-        from: 50,
-        to: 5000,
+        from: $('#min-price_input').val(),
+        to: $('#max-price_input').val(),
+        onChange: function (data) {
+            $('#min-price_input').val(data.from)
+            $('#max-price_input').val(data.to)
+        },
       });
+
+      var range_slider_instance = range_slider.data("ionRangeSlider");
+      $('#min-price_input').change((e) => {
+        range_slider_instance.update({
+          from: e.target.value
+        })
+      })
+      $('#max-price_input').change((e) => {
+        range_slider_instance.update({
+          to: e.target.value
+        })
+      })
 });
