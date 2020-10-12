@@ -9,6 +9,7 @@
       <link rel="apple-touch-icon" href="apple-touch-icon.png">
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
       <link rel="stylesheet" href="../css/normalize.min.css">
       <link rel="stylesheet" href="../css/main.css">
    </head>
@@ -221,7 +222,7 @@
                         </div>
                      </div>
                      <div class="desktop-middle-nav">
-                        <div href="" id="profile-nav-item" class="desktop-middle-nav-item">
+                        <div id="profile-nav-item" class="desktop-middle-nav-item">
                            <a href="">
                               <img src="../img/icons/profile.svg" alt="">
                               <span>Профиль</span>
@@ -241,13 +242,54 @@
                            <div class="desktop-middle-nav-item_pop-num">2</div>
                            <p>Избранное</p>
                         </a>
-                        <div href="" id="profile-nav-item" class="desktop-middle-nav-item" href="" class="desktop-middle-nav-item">
+                        <div id="cart-nav-item" class="desktop-middle-nav-item">
                            <a href="">
                               <img src="../img/icons/cartIcon.svg" alt="">
                               <div class="desktop-middle-nav-item_pop-num">2</div>
                               <p>Корзина</p>
                            </a>
-                           
+                           <div class="desktop-cart-pop-up">
+                              <div class="desktop-cart-pop-up_title">
+                                 <h3>Корзина</h3>
+                                 <p><span>2</span> товара</p>
+                              </div>
+                              <div class="desktop-cart-pop-up_cart-full">
+                                 <div class="desktop-cart-pop-up_list">
+                                    <div class="desktop-cart-pop-up_list-item">
+                                       <img src="../img/images/cardImage1.jpg" alt="" class="desktop-cart-pop-up_list-item_img">
+                                       <div class="desktop-cart-pop-up_list-item-text">
+                                          <div class="desktop-cart-pop-up_list-item-text-title">Босоножки 00001-beige</div>
+                                          <div class="desktop-cart-pop-up_list-item-text-model">Модель: <span>Zoom-000002-beige</span></div>
+                                          <div class="desktop-cart-pop-up_list-item-text_value">кол 3</div>
+                                       </div>
+                                       <div class="desktop-cart-pop-up_list-item_price">480.00₴</div>
+                                    </div>
+                                    <div class="desktop-cart-pop-up_list-item">
+                                       <img src="../img/images/cardImage1.jpg" alt="" class="desktop-cart-pop-up_list-item_img">
+                                       <div class="desktop-cart-pop-up_list-item-text">
+                                          <div class="desktop-cart-pop-up_list-item-text-title">Босоножки 00001-beige</div>
+                                          <div class="desktop-cart-pop-up_list-item-text-model">Модель: <span>Zoom-000002-beige</span></div>
+                                          <div class="desktop-cart-pop-up_list-item-text_value">кол 3</div>
+                                       </div>
+                                       <div class="desktop-cart-pop-up_list-item_price">480.00₴</div>
+                                    </div>
+                                 </div>
+                                 <div class="desktop-cart-pop-up_final-price">
+                                    <p>К оплате: <span>3000₴</span></p>
+                                 </div>
+                                 <div class="desktop-cart-pop-up_wrapper_buttons">
+                                    <a href="" class="desktop-cart-pop-up_link-cart desktop-cart-pop-up_link">Перейти в корзину</a>
+                                    <a href="" class="desktop-cart-pop-up_link-order desktop-cart-pop-up_link">Оформить заказ</a>
+                                 </div>
+                              </div>
+                              <div class="desktop-cart-pop-up_cart-empty">
+                                 <img src="../img/icons/cartEmpty.svg" alt="" class="desktop-cart-pop-up_cart-empty_image">
+                                 <div class="desktop-cart-pop-up_cart-empty_text">
+                                    <p>Ваша корзина пуста</p>
+                                    <span>Но это легко исправить :)</span>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -268,52 +310,51 @@
                            </a>
                         </li>
                         <li>
-                           <a href="">
-                              Женская 
-                              <span>
-                                 <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.1247 5.50024C6.75948 5.79242 6.24052 5.79242 5.87531 5.50024L1.22609 1.78087C0.487949 1.19036 0.905504 0 1.85078 0L11.1492 0C12.0945 0 12.5121 1.19036 11.7739 1.78087L7.1247 5.50024Z"/>
-                                 </svg>
-                              </span>
-                              <div class="sub-menu_wrapper">
-                                 <ul class="sub-menu">
-                                    <li><a href=""><span class="sub-nav_menu-text">Балетки</span><span class="sub-nav_menu-counter">(450)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Кеды</span><span class="sub-nav_menu-counter">(250)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Ботинки</span><span class="sub-nav_menu-counter">(1450)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Кросовки</span><span class="sub-nav_menu-counter">(9450)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Кроксы</span><span class="sub-nav_menu-counter">(400)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Ботинки</span><span class="sub-nav_menu-counter">(150)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Бутсы</span><span class="sub-nav_menu-counter">(459)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Тапки</span><span class="sub-nav_menu-counter">(421)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Тапочки</span><span class="sub-nav_menu-counter">(221)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Шлепки</span><span class="sub-nav_menu-counter">(1332)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Чешки</span><span class="sub-nav_menu-counter">(3213)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Слипоны</span><span class="sub-nav_menu-counter">(429)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Шлепки</span><span class="sub-nav_menu-counter">(1332)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Чешки</span><span class="sub-nav_menu-counter">(3213)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Слипоны</span><span class="sub-nav_menu-counter">(429)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
-                                    <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
-                                 </ul>
-                              </div>
-                           </a>
-                        </li>
+                            <div>
+                                <a href="">
+                                 Женская 
+                                 <span>
+                                    <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M7.1247 5.50024C6.75948 5.79242 6.24052 5.79242 5.87531 5.50024L1.22609 1.78087C0.487949 1.19036 0.905504 0 1.85078 0L11.1492 0C12.0945 0 12.5121 1.19036 11.7739 1.78087L7.1247 5.50024Z"/>
+                                     </svg>
+                                 </span>
+                                </a>
+                               <div class="sub-menu_wrapper">
+                                  <ul class="sub-menu">
+                                     <li><a href=""><span class="sub-nav_menu-text">Балетки</span><span class="sub-nav_menu-counter">(450)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Кеды</span><span class="sub-nav_menu-counter">(250)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Ботинки</span><span class="sub-nav_menu-counter">(1450)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Кросовки</span><span class="sub-nav_menu-counter">(9450)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Кроксы</span><span class="sub-nav_menu-counter">(400)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Ботинки</span><span class="sub-nav_menu-counter">(150)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Бутсы</span><span class="sub-nav_menu-counter">(459)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Тапки</span><span class="sub-nav_menu-counter">(421)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Тапочки</span><span class="sub-nav_menu-counter">(221)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Шлепки</span><span class="sub-nav_menu-counter">(1332)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Чешки</span><span class="sub-nav_menu-counter">(3213)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Слипоны</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </li>
                         <li>
-                           <a href="">
-                              Детская 
-                              <span>
-                                 <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.1247 5.50024C6.75948 5.79242 6.24052 5.79242 5.87531 5.50024L1.22609 1.78087C0.487949 1.19036 0.905504 0 1.85078 0L11.1492 0C12.0945 0 12.5121 1.19036 11.7739 1.78087L7.1247 5.50024Z"/>
-                                 </svg>
-                              </span>
+                           <div>
+                               <a href="">
+                                Детская 
+                                <span>
+                                   <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.1247 5.50024C6.75948 5.79242 6.24052 5.79242 5.87531 5.50024L1.22609 1.78087C0.487949 1.19036 0.905504 0 1.85078 0L11.1492 0C12.0945 0 12.5121 1.19036 11.7739 1.78087L7.1247 5.50024Z"/>
+                                    </svg>
+                                </span>
+                               </a>
                               <div class="sub-menu_wrapper">
                                  <ul class="sub-menu">
                                     <li><a href=""><span class="sub-nav_menu-text">Балетки</span><span class="sub-nav_menu-counter">(450)</span></a></li>
@@ -336,9 +377,12 @@
                                     <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
                                     <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
                                     <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
                                  </ul>
                               </div>
-                           </a>
+                           </div>
                         </li>
                         <li><a href="">Украинская обувь</a></li>
                         <li><a href="">Бренды</a></li>
@@ -836,6 +880,7 @@
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
       <script src="../js/main.js"></script>
    </body>
 </html>
