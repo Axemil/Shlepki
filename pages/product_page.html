@@ -1,0 +1,797 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Home page</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+      <link rel="stylesheet" href="../css/normalize.min.css">
+      <link rel="stylesheet" href="../css/main.css">
+   </head>
+   <body>
+      <div class="wrapperBlock">
+         <!-- HEADER -->
+         <header>
+            <!-- MOBILE -->
+            <div class="mobile-header">
+               <!-- NAVIGATION -->
+               <nav>
+                  <ul>
+                     <li id="open_mobile-menu">
+                        <div><img src="../img/icons/burger_menu.svg" alt=""></div>
+                     </li>
+                     <li id="list_phone-numbers">
+                        <div><img src="../img/icons/phone.svg" alt=""></div>
+                     </li>
+                     <li>
+                        <div><img src="../img/icons/logo.svg" alt=""></div>
+                     </li>
+                     <li id="search-mobile">
+                        <div><img src="../img/icons/search.svg" alt=""></div>
+                     </li>
+                     <li>
+                        <div><img src="../img/icons/cart.svg" alt=""></div>
+                     </li>
+                  </ul>
+               </nav>
+               <!-- MOBILE MENU -->
+               <div class="mobile-menu mobile-menu_logged mobile-menu_unactive">
+                  <div class="mobile-menu_lang">
+                     <div class="wrapperBlock-lang">
+                        <a class="active-lang" href="">РУС</a>
+                        <a href="">УКР</a>
+                     </div>
+                     <img id="close-mobile-menu" src="../img/icons/crossWhite.svg" alt="">
+                  </div>
+                  <div class="mobile-menu_with_icons">
+                     <ul>
+                        <li>
+                           <a href="">
+                              <img src="../img/icons/cartIcon.svg" alt="">
+                              <p>Корзина</p>
+                              <div class="mobile-menu_counter">2</div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="mobile-menu_profile_logged" href="">
+                              <img src="../img/icons/profile.svg" alt="">
+                              <p>Марквенко Л.</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                              <img src="../img/icons/heart.svg" alt="">
+                              <p>Избранное</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                              <img src="../img/icons/confirmOrder.svg" alt="">
+                              <p>Мои заказы</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                              <img src="../img/icons/eye.svg" alt="">
+                              <p>Просмотренные товары</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="mobile-menu-nav">
+                     <ul>
+                        <li class="nav-attention" ><a href="">Распродажа</a></li>
+                        <li><a href="">Новинки</a></li>
+                        <li><a href="">Женская <img src="../img/icons/arrowHorizontal.svg" alt=""></a></li>
+                        <li><a href="">Мужская <img src="../img/icons/arrowHorizontal.svg" alt=""></a></li>
+                        <li><a href="">Детская <img src="../img/icons/arrowHorizontal.svg" alt=""></a></li>
+                        <li><a href="">Украинская обувь</a></li>
+                        <li><a href="">Бренды</a></li>
+                     </ul>
+                  </div>
+                  <div class="mobile-menu-phones">
+                     <div class="mobile-menu_phone-icon">
+                        <img src="../img/icons/phoneBG.svg" alt="">
+                     </div>
+                     <div class="mobile-menu_phone-list">
+                        <a href="tel:+38 050 786 99 84">+38 050 786 99 84</a>
+                        <a href="tel:+38 050 343 34 24">+38 050 343 34 24</a>
+                        <a href="tel:+38 050 756 90 00">+38 050 756 90 00</a>
+                        <p><img src="../img/icons/clock.svg" alt="">ПН-ВС с 10:00 до 19:00</p>
+                     </div>
+                  </div>
+                  <div class="mobile-menu-bottom-nav">
+                     <ul>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Информация</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- PHONE NUMBERS -->
+               <div class="mobile-header_phone-numbers_wrapper">
+                  <div class="mobile-header_phone-numbers">
+                     <div class="mobile-header_phone-numbers_cross-btn">
+                        <img src="../img/icons/cross.svg" alt="">
+                     </div>
+                     <img src="../img/icons/phone.svg" alt="">
+                     <div class="mobile-header_phone-numbers-list">
+                        <a href="tel:+38 050 756 90 00">+38 050 786 99 84</a>
+                        <a href="tel:+38 050 756 90 00">+38 050 343 34 24</a>
+                        <a href="tel:+38 050 756 90 00">+38 050 756 90 00</a>
+                     </div>
+                     <p><img src="../img/icons/clock.svg" alt="">ПН-ВС с 10:00 до 19:00</p>
+                  </div>
+               </div>
+            </div>
+            <!-- SEARCH MOBILE -->
+            <div class="mobile-header_search_wrapper">
+               <div class="mobile-header_search">
+                  <!-- INPUT -->
+                  <input type="text" name="searcher" id="searcher" placeholder="Я ищу… (например, женские туфли)">
+                  <img id="abort-input" src="../img/icons/cross.svg" alt="">
+                  <!-- RESULT -->
+                  <div class="mobile-header_search_list">
+                     <div class="mobile-header_search_list-item">
+                        <img src="../img/images/mobile-search-photo.jpg" alt="">
+                        <p>Босоножки 00001-beige</p>
+                     </div>
+                     <div class="mobile-header_search_list-item">
+                        <img src="../img/images/mobile-search-photo.jpg" alt="">
+                        <p>Босоножки 00001-beige</p>
+                     </div>
+                     <div class="mobile-header_search_list-item">
+                        <img src="../img/images/mobile-search-photo.jpg" alt="">
+                        <p>Босоножки 00001-beige</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- DESKTOP -->
+            <div class="desktop-header">
+               <div class="desktop-top-header">
+                  <div class="containerBlock">
+                     <nav>
+                        <ul>
+                           <li><a href="">О нас</a></li>
+                           <li><a href="">Контакты</a></li>
+                           <li><a href="">Информация</a></li>
+                        </ul>
+                     </nav>
+                     <div class="wrapperBlock-lang">
+                        <a class="active-lang" href="">РУС</a>
+                        <a href="">УКР</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="desktop-middle-header">
+                  <div class="containerBlock">
+                     <div class="desktop-middle-header-wrapperBlock">
+                        <div class="desktop-logo">
+                           <a href="">
+                           <img src="../img/icons/Desktop-logo.svg" alt="">
+                           </a>
+                        </div>
+                        <div class="desktop-contacts">
+                           <a href="tel:+38 050 786 99 84"><img src="../img/icons/phoneBG.svg" alt="">+38 050 786 99 84<span><img src="../img/icons/arrow.svg" alt=""></span></a>
+                           <p><img src="../img/icons/clock.svg" alt="">ПН-ВС с 10:00 до 19:00</p>
+                           <div class="desktop-contacts_phone-list">
+                              <a href="tel:+38 050 343 34 24">+38 050 343 34 24</a>
+                              <a href="tel:+38 050 756 90 00">+38 050 756 90 00</a>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- DESKTOP SEARCHER -->
+                     <div class="desktop-searcher">
+                        <form action="">
+                           <label for="searchingField" class="desktop-searcher-wrapperBlock">
+                           <input name="searchingField" id="searchingField" type="text" placeholder="Я ищу… (на пример женские туфли)">
+                           <button type="submit"><img src="../img/icons/search.svg" alt=""></button>
+                           </label>
+                        </form>
+                        <div class="desktop-search-result">
+                           <div class="desktop-search-result-item">
+                              <img src="../img/images/mobile-search-photo.jpg" alt="">
+                              <p>Босоножки 00001-beige</p>
+                           </div>
+                           <div class="desktop-search-result-item">
+                              <img src="../img/images/mobile-search-photo.jpg" alt="">
+                              <p>Босоножки 00001-beige</p>
+                           </div>
+                           <div class="desktop-search-result-item">
+                              <img src="../img/images/mobile-search-photo.jpg" alt="">
+                              <p>Босоножки 00001-beige</p>
+                           </div>
+                           <div class="desktop-search-result-item">
+                              <img src="../img/images/mobile-search-photo.jpg" alt="">
+                              <p>Босоножки 00001-beige</p>
+                           </div>
+                           <div class="desktop-search-result-item">
+                              <img src="../img/images/mobile-search-photo.jpg" alt="">
+                              <p>Босоножки 00001-beige</p>
+                           </div>
+                           <div class="desktop-search-result-item">
+                              <img src="../img/images/mobile-search-photo.jpg" alt="">
+                              <p>Босоножки 00001-beige</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="desktop-middle-nav">
+                        <div id="profile-nav-item" class="desktop-middle-nav-item">
+                           <a href="">
+                              <img src="../img/icons/profile.svg" alt="">
+                              <span>Профиль</span>
+                           </a>
+                           <div class="desktop-profile-pop-up">
+                              <a href=""><img src="../img/icons/profilePicBlue.svg" alt=""><span class="main-color-text">Личный данные</span></a>
+                              <a href=""><img src="../img/icons/heartGrey.svg" alt=""><span>Избранное</span></a>
+                              <a href=""><img src="../img/icons/cartGrey.svg" alt=""><span>Мои заказы</span></a>
+                              <a href=""><img src="../img/icons/quitRed.svg" alt=""><span class="main-color-warning">Выйти</span></a>
+                           </div>
+                        </div>
+                        <!-- <div class="desktop-middle-nav_profile-block">
+                           <a href="">Hello</a>
+                           </div> -->
+                        <a href="" class="desktop-middle-nav-item">
+                           <img src="../img/icons/heart.svg" alt="">
+                           <div class="desktop-middle-nav-item_pop-num">2</div>
+                           <p>Избранное</p>
+                        </a>
+                        <div id="cart-nav-item" class="desktop-middle-nav-item">
+                           <a href="">
+                              <img src="../img/icons/cartIcon.svg" alt="">
+                              <div class="desktop-middle-nav-item_pop-num">2</div>
+                              <p>Корзина</p>
+                           </a>
+                           <div class="desktop-cart-pop-up">
+                              <div class="desktop-cart-pop-up_title">
+                                 <h3>Корзина</h3>
+                                 <p><span>2</span> товара</p>
+                              </div>
+                              <div class="desktop-cart-pop-up_cart-full">
+                                 <div class="desktop-cart-pop-up_list">
+                                    <div class="desktop-cart-pop-up_list-item">
+                                       <img src="../img/images/cardImage1.jpg" alt="" class="desktop-cart-pop-up_list-item_img">
+                                       <div class="desktop-cart-pop-up_list-item-text">
+                                          <div class="desktop-cart-pop-up_list-item-text-title">Босоножки 00001-beige</div>
+                                          <div class="desktop-cart-pop-up_list-item-text-model">Модель: <span>Zoom-000002-beige</span></div>
+                                          <div class="desktop-cart-pop-up_list-item-text_value">кол 3</div>
+                                       </div>
+                                       <div class="desktop-cart-pop-up_list-item_price">480.00₴</div>
+                                    </div>
+                                    <div class="desktop-cart-pop-up_list-item">
+                                       <img src="../img/images/cardImage1.jpg" alt="" class="desktop-cart-pop-up_list-item_img">
+                                       <div class="desktop-cart-pop-up_list-item-text">
+                                          <div class="desktop-cart-pop-up_list-item-text-title">Босоножки 00001-beige</div>
+                                          <div class="desktop-cart-pop-up_list-item-text-model">Модель: <span>Zoom-000002-beige</span></div>
+                                          <div class="desktop-cart-pop-up_list-item-text_value">кол 3</div>
+                                       </div>
+                                       <div class="desktop-cart-pop-up_list-item_price">480.00₴</div>
+                                    </div>
+                                 </div>
+                                 <div class="desktop-cart-pop-up_final-price">
+                                    <p>К оплате: <span>3000₴</span></p>
+                                 </div>
+                                 <div class="desktop-cart-pop-up_wrapper_buttons">
+                                    <a href="" class="desktop-cart-pop-up_link-cart desktop-cart-pop-up_link">Перейти в корзину</a>
+                                    <a href="" class="desktop-cart-pop-up_link-order desktop-cart-pop-up_link">Оформить заказ</a>
+                                 </div>
+                              </div>
+                              <div class="desktop-cart-pop-up_cart-empty">
+                                 <img src="../img/icons/cartEmpty.svg" alt="" class="desktop-cart-pop-up_cart-empty_image">
+                                 <div class="desktop-cart-pop-up_cart-empty_text">
+                                    <p>Ваша корзина пуста</p>
+                                    <span>Но это легко исправить :)</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="desktop-main-header">
+                  <nav>
+                     <ul>
+                        <li><a href="">Распродажа</a></li>
+                        <li><a href="">Новинки</a></li>
+                        <li>
+                           <a href="">
+                              Мужская 
+                              <span>
+                                 <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.1247 5.50024C6.75948 5.79242 6.24052 5.79242 5.87531 5.50024L1.22609 1.78087C0.487949 1.19036 0.905504 0 1.85078 0L11.1492 0C12.0945 0 12.5121 1.19036 11.7739 1.78087L7.1247 5.50024Z"/>
+                                 </svg>
+                              </span>
+                           </a>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="">
+                                 Женская 
+                                 <span>
+                                    <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M7.1247 5.50024C6.75948 5.79242 6.24052 5.79242 5.87531 5.50024L1.22609 1.78087C0.487949 1.19036 0.905504 0 1.85078 0L11.1492 0C12.0945 0 12.5121 1.19036 11.7739 1.78087L7.1247 5.50024Z"/>
+                                     </svg>
+                                 </span>
+                                </a>
+                               <div class="sub-menu_wrapper">
+                                  <ul class="sub-menu">
+                                     <li><a href=""><span class="sub-nav_menu-text">Балетки</span><span class="sub-nav_menu-counter">(450)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Кеды</span><span class="sub-nav_menu-counter">(250)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Ботинки</span><span class="sub-nav_menu-counter">(1450)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Кросовки</span><span class="sub-nav_menu-counter">(9450)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Кроксы</span><span class="sub-nav_menu-counter">(400)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Ботинки</span><span class="sub-nav_menu-counter">(150)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Бутсы</span><span class="sub-nav_menu-counter">(459)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Тапки</span><span class="sub-nav_menu-counter">(421)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Тапочки</span><span class="sub-nav_menu-counter">(221)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Шлепки</span><span class="sub-nav_menu-counter">(1332)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Чешки</span><span class="sub-nav_menu-counter">(3213)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Слипоны</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
+                                     <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </li>
+                        <li>
+                           <div>
+                               <a href="">
+                                Детская 
+                                <span>
+                                   <svg width="13" height="6" viewBox="0 0 13 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.1247 5.50024C6.75948 5.79242 6.24052 5.79242 5.87531 5.50024L1.22609 1.78087C0.487949 1.19036 0.905504 0 1.85078 0L11.1492 0C12.0945 0 12.5121 1.19036 11.7739 1.78087L7.1247 5.50024Z"/>
+                                    </svg>
+                                </span>
+                               </a>
+                              <div class="sub-menu_wrapper">
+                                 <ul class="sub-menu">
+                                    <li><a href=""><span class="sub-nav_menu-text">Балетки</span><span class="sub-nav_menu-counter">(450)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Кеды</span><span class="sub-nav_menu-counter">(250)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Ботинки</span><span class="sub-nav_menu-counter">(1450)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Кросовки</span><span class="sub-nav_menu-counter">(9450)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Кроксы</span><span class="sub-nav_menu-counter">(400)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Ботинки</span><span class="sub-nav_menu-counter">(150)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Бутсы</span><span class="sub-nav_menu-counter">(459)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Тапки</span><span class="sub-nav_menu-counter">(421)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Тапочки</span><span class="sub-nav_menu-counter">(221)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Шлепки</span><span class="sub-nav_menu-counter">(1332)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Чешки</span><span class="sub-nav_menu-counter">(3213)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Слипоны</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Сапоги</span><span class="sub-nav_menu-counter">(429)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Сникерсы</span><span class="sub-nav_menu-counter">(228)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Угги</span><span class="sub-nav_menu-counter">(1337)</span></a></li>
+                                    <li><a href=""><span class="sub-nav_menu-text">Футбольная обувь</span><span class="sub-nav_menu-counter">(1488)</span></a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li><a href="">Украинская обувь</a></li>
+                        <li><a href="">Бренды</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </header>
+         <!-- MAIN -->
+         <main>
+            <div class="main-products-block">
+                <div class="main-bread-crumbs">
+                    <div class="main-bread-crumbs_wrapper">
+                        <a href="">Главная страница</a>
+                        <span><img src="../img/icons/arrow_small.svg" alt=""></span>
+                        <a href="">Женская обувь</a>
+                        <span><img src="../img/icons/arrow_small.svg" alt=""></span>
+                        <a href="">Туфли</a>
+                        <span><img src="../img/icons/arrow_small.svg" alt=""></span>
+                        <a href="" class="main-bread-crumbs_active">Босоножки 00001-beige</a>
+                    </div>
+                </div>
+                <div class="main-product-page_info">
+                    <!-- SLIDER -->
+                    <div class="cd-slider-wrapper">
+                        <ul class="cd-slider" data-step1="M1402,800h-2V525V0h1c0.6,0,1,0.4,1,1V800z" data-step2="M1400,800H739L427,523L760,0h639c0.6,0,1,0.4,1,1V800z" data-step3="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" data-step4="M-2,800h2V525V0h-1c-0.6,0-1,0.4-1,1V800z" data-step5="M0,800h661l312-277L640,0L1,0C0.4,0,0,0.4,0,1L0,800z" data-step6="M0,800h1400V521V0L1,0C0.4,0,0,0.4,0,1L0,800z">
+                            <li class="visible">
+                                <div class="cd-svg-wrapper">
+                                    <svg viewBox="0 0 1400 800">
+                                        <title>Aimated SVG</title>
+                                        <defs>
+                                            <clipPath id="cd-image-1">
+                                                <path id="cd-changing-path-1" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+                                            </clipPath>
+                                        </defs>
+                                        
+                                        <image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="../img/images/cardImage1.jpg"></image>
+                                    </svg>
+                                </div> <!-- .cd-svg-wrapper -->
+                            </li>
+                
+                            <li>
+                                <div class="cd-svg-wrapper">
+                                    <svg viewBox="0 0 1400 800">
+                                        <title>Aimated SVG</title>
+                                        <defs>
+                                            <clipPath id="cd-image-2">
+                                                <path id="cd-changing-path-2" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+                                            </clipPath>
+                                        </defs>
+                                        
+                                        <image height='800px' width="1400px" clip-path="url(#cd-image-2)" xlink:href="../img/images/cardImage2.jpg"></image>
+                                    </svg>
+                                </div> <!-- .cd-svg-wrapper -->
+                            </li>
+                
+                            <li>
+                                <div class="cd-svg-wrapper">
+                                    <svg viewBox="0 0 1400 800">
+                                        <title>Aimated SVG</title>
+                                        <defs>
+                                            <clipPath id="cd-image-3">
+                                                <path id="cd-changing-path-3" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+                                            </clipPath>
+                                        </defs>
+                                        
+                                        <image height='800px' width="1400px" clip-path="url(#cd-image-3)" xlink:href="../img/images/cardImage1.jpg"></image>
+                                    </svg>
+                                </div> <!-- .cd-svg-wrapper -->
+                            </li>
+                
+                            <li>
+                                <div class="cd-svg-wrapper">
+                                    <svg viewBox="0 0 1400 800">
+                                        <title>Aimated SVG</title>
+                                        <defs>
+                                            <clipPath id="cd-image-4">
+                                                <path id="cd-changing-path-4" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+                                            </clipPath>
+                                        </defs>
+                                        
+                                        <image height='800px' width="1400px" clip-path="url(#cd-image-4)" xlink:href="../img/images/cardImage2.jpg"></image>
+                                    </svg>
+                                </div> <!-- .cd-svg-wrapper -->
+                            </li>
+                            
+                        </ul> <!-- .cd-slider -->
+                
+                        <ul class="cd-slider-navigation">
+                            <li class="first_slider_button" ><a href="#0" class="next-slide">
+                                <img src="../img/icons/sliderIcon.svg" alt="">
+                            </a></li>
+                            <li><a href="#0" class="prev-slide">
+                                <img src="../img/icons/sliderIcon.svg" alt="">
+                            </a></li>
+                        </ul> <!-- .cd-slider-navigation -->
+                
+                        <ol class="cd-slider-controls">
+                            <li class="selected"><a href="#0"><em>Item 1</em></a></li>
+                            <li><a href="#0"><em>Item 2</em></a></li>
+                            <li><a href="#0"><em>Item 3</em></a></li>
+                            <li><a href="#0"><em>Item 4</em></a></li>
+                        </ol> <!-- .cd-slider-controls -->
+                    </div> <!-- .cd-slider-wrapper -->
+                    <div class="main-products-page-info_text">
+                        <h3>Босоножки 00001-beige</h3>
+                        <p>Модель: Zoom-00002-beige</p>
+                        <h4>Пар в ящике (<span>8</span>)</h4>
+                        <div class="main-products-page_list_prices">
+                            <div class="main-products-page_list_item">
+                                <p>Цена за пару</p>
+                                <span>60.00₴</span>
+                            </div>
+                            <div class="main-products-page_list_item">
+                                <p>Цена за ящик</p>
+                                <span>480.00₴</span>
+                            </div>
+                        </div>
+                        <div class="main-products-page-info_control">
+                            <form action="">
+                                <div class="counter-value_block">
+                                    <p>Кол-во ящиков</p>
+                                    <div id="counter_products_prev">
+                                        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.499756 6.6247C0.207581 6.25948 0.20758 5.74052 0.499755 5.37531L4.21913 0.726088C4.80964 -0.0120499 6 0.405504 6 1.35078L6 10.6492C6 11.5945 4.80964 12.0121 4.21913 11.2739L0.499756 6.6247Z" fill="#9DA8B3"/>
+                                        </svg>
+                                    </div>
+                                    <input type="number" name="counter_products" id="counter_products" value="1">
+                                    <div id="counter_products_next">
+                                        <svg width="6" height="13" viewBox="0 0 6 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.50024 7.1247C5.79242 6.75948 5.79242 6.24052 5.50024 5.87531L1.78087 1.22609C1.19036 0.48795 6.66338e-08 0.905504 9.96893e-08 1.85078L4.24847e-07 11.1492C4.57903e-07 12.0945 1.19036 12.5121 1.78087 11.7739L5.50024 7.1247Z" fill="#9DA8B3"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <button type="submit">Купить <img src="../img/icons/whiteCart.svg" alt=""></button>
+                            </form>
+                        </div>
+                        <a href="" class="main-products-page-info_favorite"><img src="../img/icons/heartGrey.svg" alt="">В избранное</a>
+                    </div>
+                    <div class="main-products-page-info_desription">
+                        <div class="main-products-page-info_control_panel">
+                            <label for="characteristic" class="main-product-info_control_panel_active">
+                                <input type="radio" name="description" id="characteristic">
+                                <p>Характеристики</p>
+                            </label>
+                            <label for="info_text">
+                                <input type="radio" name="description" id="info_text">
+                                <p>Описание</p>
+                            </label>
+                        </div>
+                        <div class="main-products-page_list_characteristic">
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Артикул:</span>
+                                <p>GoldStar-9999-17-3 </p>
+                            </div>
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Сезон:</span>
+                                <p>Весна/осень</p>
+                            </div>
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Тип обуви:</span>
+                                <p>Кроссовки</p>
+                            </div>
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Размеры:</span>
+                                <p>37-41</p>
+                            </div>
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Цвет:</span>
+                                <p>Графит</p>
+                            </div>
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Материал верха:</span>
+                                <p>Текстиль</p>
+                            </div>
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Материал подошвы:</span>
+                                <p>Резина</p>
+                            </div>
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Пар в ящике:</span>
+                                <p>8</p>
+                            </div>
+                            <div class="main-products-page_list_characteristic_item">
+                                <span>Производитель:</span>
+                                <p>Китай</p>
+                            </div>
+                        </div>
+                        <div class="main-products-page_list_description">
+                            В оптовом интернет-магазине "Shlepki" – только качественная обувь по ценам от производителя. Собираем заказы оперативно и каждую неделю пополняем ассортимент новинками. Хотим, чтобы у вас был большой и разнообразный выбор для покупки. 
+                            Теперь, чтобы купить обувь оптом 
+                            в Одессе не нужно никуда ехать! Просто 
+                            заходите на сайт, выбирайте интересующий вас товар и оформляйте заказ в несколько кликов!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-products main-block-wrapper">
+               <div class="main-title">Похожие товары</div>
+               <!-- CARDS PRODUCT LIST -->
+               <div class="main-product-list">
+                  <!-- CARD PRODUCT -->
+                  <div class="main-product-list_item">
+                     <img class="product-favorite" src="../img/icons/greyHeart.svg" alt="">
+                     <a href="" class="preview-product"><img src="../img/images/cardImage1.jpg" alt=""></a>
+                     <p class="product-title">Босоножки 00001-beige</p>
+                     <p class="product-model">Модель: Zoom-00002-beige</p>
+                     <p class="product-value">Пар в ящике (8)</p>
+                     <div class="product-list-prices">
+                        <div class="product-list-prices_item">
+                           <span>Цена за пару</span>
+                           <p>60.00 ₴</p>
+                        </div>
+                        <div class="product-list-prices_item">
+                           <span>Цена за ящик</span>
+                           <p>480.00 ₴  </p>
+                        </div>
+                     </div>
+                     <a href="" class="product-button-cart">В корзину <img src="../img/icons/whiteCart.svg" alt=""></a>
+                  </div>
+                  <div class="main-product-list_item">
+                     <img class="product-favorite" src="../img/icons/greyHeart.svg" alt="">
+                     <a href="" class="preview-product"><img src="../img/images/cardImage2.jpg" alt=""></a>
+                     <p class="product-title">Босоножки 00001-beige</p>
+                     <p class="product-model">Модель: Zoom-00002-beige</p>
+                     <p class="product-value">Пар в ящике (8)</p>
+                     <div class="product-list-prices">
+                        <div class="product-list-prices_item">
+                           <span>Цена за пару</span>
+                           <p>60.00 ₴</p>
+                        </div>
+                        <div class="product-list-prices_item">
+                           <span>Цена за ящик</span>
+                           <p>480.00 ₴  </p>
+                        </div>
+                     </div>
+                     <a href="" class="product-button-cart">В корзину <img src="../img/icons/whiteCart.svg" alt=""></a>
+                  </div>
+                  <div class="main-product-list_item">
+                     <img class="product-favorite" src="../img/icons/greyHeart.svg" alt="">
+                     <a href="" class="preview-product"><img src="../img/images/cardImage2.jpg" alt=""></a>
+                     <p class="product-title">Босоножки 00001-beige</p>
+                     <p class="product-model">Модель: Zoom-00002-beige</p>
+                     <p class="product-value">Пар в ящике (8)</p>
+                     <div class="product-list-prices">
+                        <div class="product-list-prices_item">
+                           <span>Цена за пару</span>
+                           <p>60.00 ₴</p>
+                        </div>
+                        <div class="product-list-prices_item">
+                           <span>Цена за ящик</span>
+                           <p>480.00 ₴  </p>
+                        </div>
+                     </div>
+                     <a href="" class="product-button-cart">В корзину <img src="../img/icons/whiteCart.svg" alt=""></a>
+                  </div>
+                  <div class="main-product-list_item">
+                     <img class="product-favorite" src="../img/icons/greyHeart.svg" alt="">
+                     <a href="" class="preview-product"><img src="../img/images/cardImage2.jpg" alt=""></a>
+                     <p class="product-title">Босоножки 00001-beige</p>
+                     <p class="product-model">Модель: Zoom-00002-beige</p>
+                     <p class="product-value">Пар в ящике (8)</p>
+                     <div class="product-list-prices">
+                        <div class="product-list-prices_item">
+                           <span>Цена за пару</span>
+                           <p>60.00 ₴</p>
+                        </div>
+                        <div class="product-list-prices_item">
+                           <span>Цена за ящик</span>
+                           <p>480.00 ₴  </p>
+                        </div>
+                     </div>
+                     <a href="" class="product-button-cart">В корзину <img src="../img/icons/whiteCart.svg" alt=""></a>
+                  </div>
+               </div>
+            </div>
+            <div class="main-block-wrapper">
+               <div class="main-navigation">
+                  <nav>
+                      <ul>
+                          <li><a href="">Распродажа</a></li>
+                          <li><a href="">Новинки</a></li>
+                          <li><a href="">Женская</a></li>
+                          <li><a href="">Мужская</a></li>
+                          <li><a href="">Детская</a></li>
+                          <li><a href="">Украинская обувь</a></li>
+                          <li><a href="">Бренды</a></li>
+                      </ul>
+                  </nav>
+              </div>
+            </div>
+
+            <div class="main-description">
+                <h2 class="main-description_title">Качественная обувь оптом </h2>
+                <p>
+                    В оптовом интернет-магазине "Shlepki" – только качественная обувь по ценам от производителя. Собираем заказы оперативно и каждую неделю пополняем ассортимент новинками. Хотим, чтобы у вас был большой и разнообразный выбор для покупки. Теперь, чтобы купить обувь оптом в Одессе не нужно никуда ехать! Просто заходите на сайт, выбирайте интересующий вас товар и оформляйте заказ в несколько кликов! <br>
+                    <br>
+                    Мужская, женская, детская обувь – весь наш товар закуплен у проверенных надежных производителей – зарубежных и украинских. Мы знаем, что для вас важно предлагать своим покупателям только качественную обувь. Поэтому внимательно относимся к отбору продукции, которую публикуем на сайте для продажи.<br>
+                    Приобретайте в магазине "Shlepki" сезонную обувь, спортивную и праздничную. Из натуральной кожи, кожзаменителя, замши или текстиля.<br>
+                    <br>
+                    Если вы планируете регулярно покупать обувь оптом в Одессе, предлагаем индивидуальные условия сотрудничества. Мы ценим каждого клиента и постоянно организовываем для вас акции и специальные предложения.<br>
+                </p>
+                <div class="main-description-hider">
+                    <button>
+                        <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.146447 0.146447C0.320013 -0.0271197 0.589437 -0.0464049 0.784306 0.0885912L0.853553 0.146447L4.5 3.793L8.14645 0.146447C8.32001 -0.0271197 8.58944 -0.0464049 8.78431 0.0885912L8.85355 0.146447C9.02712 0.320013 9.0464 0.589437 8.91141 0.784306L8.85355 0.853553L4.85355 4.85355C4.67999 5.02712 4.41056 5.0464 4.21569 4.91141L4.14645 4.85355L0.146447 0.853553C-0.0488155 0.658291 -0.0488155 0.341709 0.146447 0.146447Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+         </main>
+
+
+         <!-- FOOTER -->
+         <footer>
+             <div class="footer-wrapper">
+                <div class="footer-nav-list">
+                    <div class="footer-nav-list_item">
+                        <p>Информация 
+                            <span>
+                                <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.146447 0.146447C0.320013 -0.0271197 0.589437 -0.0464049 0.784306 0.0885912L0.853553 0.146447L4.5 3.793L8.14645 0.146447C8.32001 -0.0271197 8.58944 -0.0464049 8.78431 0.0885912L8.85355 0.146447C9.02712 0.320013 9.0464 0.589437 8.91141 0.784306L8.85355 0.853553L4.85355 4.85355C4.67999 5.02712 4.41056 5.0464 4.21569 4.91141L4.14645 4.85355L0.146447 0.853553C-0.0488155 0.658291 -0.0488155 0.341709 0.146447 0.146447Z" fill="white"/>
+                                </svg>                                
+                            </span>
+                        </p>
+                        <nav>
+                            <ul>
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Доставка и оплата</a></li>
+                                <li><a href="">Обмен и возврат</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li><a href="">Блог</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-nav-list_item">
+                        <p>Контакты 
+                            <span>
+                                <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.146447 0.146447C0.320013 -0.0271197 0.589437 -0.0464049 0.784306 0.0885912L0.853553 0.146447L4.5 3.793L8.14645 0.146447C8.32001 -0.0271197 8.58944 -0.0464049 8.78431 0.0885912L8.85355 0.146447C9.02712 0.320013 9.0464 0.589437 8.91141 0.784306L8.85355 0.853553L4.85355 4.85355C4.67999 5.02712 4.41056 5.0464 4.21569 4.91141L4.14645 4.85355L0.146447 0.853553C-0.0488155 0.658291 -0.0488155 0.341709 0.146447 0.146447Z" fill="white"/>
+                                </svg>                                
+                            </span>
+                        </p>
+                        <nav>
+                            <ul>
+                                <li>Адрес: Одесса, Промрынок 7км</li>
+                                <li>Tелефон: <a href="tel:+38 (063) 725-47-71">+38 (063) 725-47-71</a></li>
+                                <li>Мы открыты: с 8:00 до 20:00</li>
+                                <li>E-mail info@shlepki.com</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-nav-list_item">
+                        <p>Личный кабинет
+                            <span>
+                                <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.146447 0.146447C0.320013 -0.0271197 0.589437 -0.0464049 0.784306 0.0885912L0.853553 0.146447L4.5 3.793L8.14645 0.146447C8.32001 -0.0271197 8.58944 -0.0464049 8.78431 0.0885912L8.85355 0.146447C9.02712 0.320013 9.0464 0.589437 8.91141 0.784306L8.85355 0.853553L4.85355 4.85355C4.67999 5.02712 4.41056 5.0464 4.21569 4.91141L4.14645 4.85355L0.146447 0.853553C-0.0488155 0.658291 -0.0488155 0.341709 0.146447 0.146447Z" fill="white"/>
+                                </svg>                                
+                            </span>
+                        </p>
+                        <nav>
+                            <ul>
+                                <li><a href="">Личный данные</a></li>
+                                <li><a href="">Избранное</a></li>
+                                <li><a href="">Мои заказы</a></li>
+                                <li><a href="">Просмотренные товары</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-sign-up">
+                        <div class="footer-sign-up_title">Подпишитесь на нашу рассылку:</div>
+                        <div class="footer-sign-up_label">Чтоб быть всегда в курсе о предстоящих распродажах и предложениях. Подпишитесь на рассылку.</div>
+                        <form action="">
+                            <label for="emailSignUp">
+                                <input type="email" name="emailSignUp" id="emailSignUp" placeholder="Ведите ва email" required>
+                                <button type="submit">
+                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L9 9L1 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <!-- FOOTER FORM -->
+             </div>
+             <div class="footer-payments">
+                <a href="">
+                    <img src="../img/icons/logo_footer.svg" alt="">
+                </a>
+                <div class="footer-payments_wrapper">
+                    <p>Мы прынимаем</p>
+                    <img src="../img/icons/visa.svg" alt="">
+                    <img src="../img/icons/mastercard.svg" alt="">
+                    <img src="../img/icons/maestro.svg" alt="">
+                    <img src="../img/icons/paypal.svg" alt="">
+                </div>
+            </div>
+         </footer>
+      </div>
+      <!-- SCRIPTS -->
+      <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+      <script src="../js/vendor/snap.svg-min.js"></script>
+      <script src="../js/vendor/modernizr.js"></script>
+      <script src="../js/vendor/jquery.mobile.custom.min.js"></script>
+      <script src="../js/slider.js"></script>
+      <script src="../js/main.js"></script>
+   </body>
+</html>

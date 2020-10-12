@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  
+
 
     //PHONE LIST ON MOBILE
     $('#list_phone-numbers').click(() => {
@@ -102,6 +102,36 @@ $(document).ready(function () {
       } else {
         event.currentTarget.nextElementSibling.classList.toggle('open-filter')
       }
+    })
+
+
+          // COUNTER PRODUCTS
+          $("#counter_products").change((e) => {
+            if(e.target.value * 1 < 1) e.target.value = 1
+          })
+          $("#counter_products_prev").click((event) => {
+            event.preventDefault();
+            const value = $("#counter_products").val();
+            $("#counter_products").val(value == 1 ? 1 : 1 * value - 1);
+          });
+          $("#counter_products_next").click((event) => {
+            event.preventDefault();
+            const value = $("#counter_products").val();
+            $("#counter_products").val(1 * value + 1);
+          });
+
+    $('#characteristic,#info_text').click((e) => {
+      if(e.currentTarget.id === 'info_text'){
+        $('#characteristic').parent().removeClass("main-product-info_control_panel_active")
+        $('.main-products-page_list_characteristic').hide();
+        $('.main-products-page_list_description').show();
+      }
+      if(e.currentTarget.id === 'characteristic'){
+        $('#info_text').parent().removeClass("main-product-info_control_panel_active")
+        $('.main-products-page_list_characteristic').show();
+        $('.main-products-page_list_description').hide();
+      }
+      e.currentTarget.parentNode.classList.add('main-product-info_control_panel_active')
     })
 
 
@@ -219,30 +249,31 @@ $(document).ready(function () {
       
       new Dropdown('.a-dropdown');
 
-      const range_slider = $(".js-range-slider")
-
-      range_slider.ionRangeSlider({
-        type: "double",
-        step: 10,
-        min: 0,
-        max: 10000,
-        from: $('#min-price_input').val(),
-        to: $('#max-price_input').val(),
-        onChange: function (data) {
-            $('#min-price_input').val(data.from)
-            $('#max-price_input').val(data.to)
-        },
-      });
-
-      var range_slider_instance = range_slider.data("ionRangeSlider");
-      $('#min-price_input').change((e) => {
-        range_slider_instance.update({
-          from: e.target.value
+      if($(".js-range-slider")){
+        const range_slider = $(".js-range-slider")
+        range_slider.ionRangeSlider({
+          type: "double",
+          step: 10,
+          min: 0,
+          max: 10000,
+          from: $('#min-price_input').val(),
+          to: $('#max-price_input').val(),
+          onChange: function (data) {
+              $('#min-price_input').val(data.from)
+              $('#max-price_input').val(data.to)
+          },
+        });
+  
+        var range_slider_instance = range_slider.data("ionRangeSlider");
+        $('#min-price_input').change((e) => {
+          range_slider_instance.update({
+            from: e.target.value
+          })
         })
-      })
-      $('#max-price_input').change((e) => {
-        range_slider_instance.update({
-          to: e.target.value
+        $('#max-price_input').change((e) => {
+          range_slider_instance.update({
+            to: e.target.value
+          })
         })
-      })
+      }
 });
