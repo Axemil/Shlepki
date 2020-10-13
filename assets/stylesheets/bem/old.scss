@@ -75,6 +75,10 @@ header {
     margin: auto;
 }
 
+input{
+    background: inherit;
+}
+
 
 /* MESSAGE PAGES */
 .message-page {
@@ -859,7 +863,7 @@ header {
     color: var(--main-color);
 }
 .main-color-warning, .sale{
-    color: var(--attention-color);
+    color: var(--attention-color)!important;
 }
 
 
@@ -960,6 +964,7 @@ header {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 100%;
+    max-width: 1170px;
     height: 340px;
     padding: 25px 35px 35px;
     display: flex;
@@ -1790,12 +1795,12 @@ body {
     background: var(--color-icon);
 }
 
-#list_with_checkbox p {
+.list_with_checkbox p {
     display: flex;
     align-items: center;
 }
 
-#list_with_checkbox p::before {
+.list_with_checkbox p::before {
     content: ' ';
     margin: 1px 17px 0 0;
     width: 17px;
@@ -1806,7 +1811,7 @@ body {
     border-radius: 5px;
 }
 
-/* #type_of_shoes label input{
+/* .type_of_shoes label input{
     display: none;
 } */
 /* #colors_checkboxes{
@@ -1823,8 +1828,8 @@ body {
     border-radius: 50%;
 }
 
-#type_of_shoes p,
-#list_with_checkbox p {
+.type_of_shoes p,
+.list_with_checkbox p {
     color: #929292;
     font-family: var(--FS-font);
     font-weight: 300;
@@ -1835,25 +1840,25 @@ body {
     flex-wrap: wrap;
 }
 
-#list_with_checkbox input:checked+p {
+.list_with_checkbox input:checked+p {
     position: relative;
     color: #000;
     font-weight: 500;
 }
 
-#list_with_checkbox input:checked+p::before {
+.list_with_checkbox input:checked+p::before {
     background: #CCF3FF;
     border: 1px solid #CCF3FF;
 }
 
-#list_with_checkbox input:checked+p::after {
+.list_with_checkbox input:checked+p::after {
     content: '✓';
     position: absolute;
     color: #25B4E5;
     left: 3px;
 }
 
-#type_of_shoes input:checked+p {
+.type_of_shoes input:checked+p {
     color: #000;
     font-weight: 500;
 }
@@ -1878,11 +1883,12 @@ body {
 }
 
 .filter-item_label {
+    font-family: var(--Open-font);
     width: 100%;
 }
 
-.filter-item #type_of_shoes input,
-.filter-item #list_with_checkbox input,
+.filter-item .type_of_shoes input,
+.filter-item .list_with_checkbox input,
 .filter-item #colors_checkboxes input {
     display: none;
 }
@@ -2317,7 +2323,47 @@ body {
   .no-touch .cd-slider-controls a:hover {
     background-color: #ffffff;
   }
+
+  .main-list_brands {
+      padding: 0 15px;
+  }
   
+  .main-list_wrapper_brands{
+      max-width: 1170px;
+      width: 100%;
+      margin: 30px auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  .main-list_item{
+      width: 100%;
+      margin: 0 0 10px 0;
+  }
+  .main-list_item a{
+      display: block;
+      text-align: center;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .main-list_item a img{
+      width: 100%;
+  }
+  .main-list_item_img_wrapper{
+      width: 100%;
+      padding: 20px 30px;
+      background: #fff;
+      border-radius: 16px;
+  }
+  .main-list_item p{
+      margin: 20px 0 0 0;
+      font-family: var(--Fira-font);
+      font-weight: 600;
+      font-size: 14px;
+  }
 
 
 /*////////////////////////////////////////////////////////////////*/
@@ -2555,29 +2601,29 @@ footer {
 
     .irs-min,
     .irs-max {
-        display: none;
+        display: none!important;
     }
 
     .irs-single{
-        display: none;
+        display: none!important;
     }
 
     .irs--flat .irs-line {
-        height: 6px;
+        height: 6px!important;
     }
 
     .irs--flat .irs-bar {
-        height: 6px;
-        background: var(--main-color);
+        height: 6px!important;
+        background: var(--main-color)!important;
     }
 
     .irs--flat .irs-handle>i:first-child {
-        width: 16px;
-        height: 25px;
-        top: -6px;
-        border-radius: 5px;
-        background: #fff;
-        border: 1px solid #1D9FE6;
+        width: 16px!important;
+        height: 25px!important;
+        top: -6px!important;
+        border-radius: 5px!important;
+        background: #fff!important;
+        border: 1px solid #1D9FE6!important;
     }
 
     .irs--flat .irs-handle>i:first-child:hover {
@@ -2585,7 +2631,7 @@ footer {
     }
 
     .irs-to,.irs-from{
-        display: none;
+        display: none!important;
     }
 
     /* SWIPER */
@@ -2630,6 +2676,11 @@ footer {
 
     /*////////////////////////////////////////////////////////////////*/
 
+
+    .main-list_item{
+        width: 46%;
+    }
+
 }
 
 /* for-tablet-portrait-up */
@@ -2661,6 +2712,9 @@ footer {
 
 
     /* MAIN */
+    .main-list_item{
+        width: 15%;
+    }
     .main-products-block .cd-slider > li{
         margin: 25px 0 0 0;
     }
