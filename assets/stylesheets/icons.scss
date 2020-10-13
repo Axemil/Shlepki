@@ -1,3 +1,11 @@
+.i-delete {
+  @include icon('\e900', 'icomoon');
+}
+
 .i-arrow {
-  @include icon('\e90f', 'icomoon');
+  @include icon('\e901', 'icomoon');
+}
+
+.i-empty-basket {
+  @include icon('\e902', 'icomoon');
 }
