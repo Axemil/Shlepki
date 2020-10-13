@@ -1,0 +1,16 @@
+@import "node_modules/normalize.css/normalize";
+@import "node_modules/bourbon/core/_bourbon";
+@import "node_modules/swiper/swiper";
+
+// mixins
+@import "mixins/icon";
+
+@import "fonts";
+@import "defaults";
+@import "icons";
+
+// bem blocks
+@import "bem/header";
+@import "bem/content";
+@import "bem/footer";
+@import "bem/old";

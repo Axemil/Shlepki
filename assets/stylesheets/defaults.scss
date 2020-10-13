@@ -1,0 +1,30 @@
+body {
+  font-family: 'MuseoSansCyrl', sans-serif;;
+  color: #000000;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  background: #FAFAFA;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a, button, input, select, textarea, [contenteditable="true"], [tabindex] {
+  color: #000000;
+  outline: none;
+  transition: .3s;
+}
+
+// Turn Off Number Input Spinners
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}

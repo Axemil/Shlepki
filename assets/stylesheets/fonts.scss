@@ -1,0 +1,26 @@
+@include font-face("MuseoSansCyrl", "fonts/MuseoSans/MuseoSansCyrl_100-webfont", ("eot", "woff2", "woff", "ttf", "svg")) {
+  font-style: normal;
+  font-weight: 100;
+}
+
+@include font-face("MuseoSansCyrl", "fonts/MuseoSans/MuseoSansCyrl_300-webfont", ("eot", "woff2", "woff", "ttf", "svg")) {
+  font-style: normal;
+  font-weight: 300;
+}
+
+@include font-face("MuseoSansCyrl", "fonts/MuseoSans/MuseoSansCyrl_500-webfont", ("eot", "woff2", "woff", "ttf", "svg")) {
+  font-style: normal;
+  font-weight: 500;
+}
+
+@include font-face("MuseoSansCyrl", "fonts/MuseoSans/MuseoSansCyrl_700-webfont", ("eot", "woff2", "woff", "ttf", "svg")) {
+  font-style: normal;
+  font-weight: 700;
+}
+
+@include font-face("MuseoSansCyrl", "fonts/MuseoSans/MuseoSansCyrl_900-webfont", ("eot", "woff2", "woff", "ttf", "svg")) {
+  font-style: normal;
+  font-weight: 900;
+}
+
+@include font-face("icomoon", "fonts/icomoon/icomoon", ("eot", "woff", "ttf", "svg"));  
