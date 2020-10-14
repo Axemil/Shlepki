@@ -1,0 +1,101 @@
+.aboutus {
+    background: linear-gradient(180deg,rgba(29,159,230,.06),#f6f6f6);
+    padding-top: 16px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 26px;
+        &_item {
+            width: 100%;
+            max-width: 302px;
+            &_img {
+                img {
+                    height: 40px;
+                }
+                padding-bottom: 7px;
+            }
+            &_title {
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                color: #6F8090;
+                font-family: Fira Sans Condensed;
+                padding-bottom: 23px;
+            }
+            &.active {
+                border-bottom: 3px solid #25B4E5;
+            }
+            &:hover {
+                p {
+                    color:  #25B4E5;
+                }
+            }
+        }
+    }
+    &__wrap {
+        background-color: white;
+        padding-top: 30px;
+        padding-bottom: 65px;
+        .container  {
+            max-width: 710px;
+        }
+    }
+    &__title {
+        font-size: 38px;
+        line-height: 55px;
+        font-family: Fira Sans Condensed;
+        padding-bottom: 4px;
+    }
+    &__subtitle {
+        font-size: 15px;
+        line-height: 21px;
+        color: #969696;
+        padding-bottom: 40px;
+    }
+    &__list{
+        padding-bottom: 18px;
+        &_title {
+            font-family: Fira Sans Condensed;
+            font-size: 22px;
+            line-height: 21px;
+            padding-bottom: 15px;
+        }
+        
+        ul {
+            li {
+                font-size: 15px;
+                line-height: 30px;
+                position: relative;
+                font-family: Open Sans;
+                padding-left: 14px;
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 6px;
+                    height: 6px;
+                    background: #25B4E5;
+                    border-radius: 50%;
+                    margin-right: 13px;
+                    position: absolute;
+                    top: 14px;
+                    left: 0;
+                }
+                span {
+                    display: block;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    &__desc {
+        font-family: Open Sans;
+        font-size: 15px;
+        line-height: 21px;
+        p {
+            padding-bottom: 18px;
+            span {
+                color: #25B4E5;
+            }
+        }
+    }
+}

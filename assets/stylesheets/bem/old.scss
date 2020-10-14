@@ -488,6 +488,9 @@ header {
 .desktop-top-header ul li>a {
     font-weight: 500;
     font-size: 14px;
+    &:hover {
+        color: #e4e4e4;
+    }
 }
 
 .desktop-top-header a {
@@ -1760,10 +1763,6 @@ body {
 
 .filter-block>label:last-child {
     margin: 0;
-}
-
-.filter-block label input {
-    /* display: none; */
 }
 
 .filter-prices_inputs_wrapper{

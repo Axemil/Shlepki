@@ -1,0 +1,83 @@
+.contacts {
+    background: linear-gradient(180deg,rgba(29,159,230,.06),#f6f6f6);
+    padding-top: 16px;
+    &__wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 27px;
+    }
+    &__info {
+        padding-right: 51px;
+        border-right: 1px solid #F8F8F8;
+        padding-bottom: 15px;
+        &_item {
+            padding-bottom: 32px;
+            i {
+                color: #25B4E5;
+                font-size: 34px;
+                line-height: 1;
+            }
+            p {
+                font-size: 15px;
+                line-height: 25px;
+                font-family: Fira Sans Condensed;
+                padding-top: 5px;
+            }
+        }
+    }
+    &__form {
+        width: 100%;
+        max-width: 459px;
+        &_title {
+            font-family: Fira Sans Condensed;
+            font-size: 18px;
+            line-height: 21px;
+            color: #6F8090;
+            padding-bottom: 14px;
+        }
+        form {
+            width: 100%;
+            p {
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 18px;
+                color: #5C6773;
+                padding-bottom: 6px;
+            }
+            input,textarea {
+                width: 100%;
+                height: 44px;
+                border: 1px solid #D0D0D0;
+                border-radius: 10px;
+                font-size: 13px;
+                line-height: 18px;
+                padding: 0 17px;
+                margin-bottom: 23px;
+                &::placeholder {
+                    color: #929292;
+                }
+            }
+            textarea {
+                height: 99px;
+                padding-top: 13px;
+            }
+            input[type=submit] {
+                width: 245px;
+                height: 44px;
+                background: #25B4E5;
+                box-shadow: 0px 2px 10px rgba(41, 96, 204, 0.3), 0px 2px 4px rgba(41, 96, 204, 0.3);
+                border: none;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 18px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
