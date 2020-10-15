@@ -200,6 +200,10 @@
     }
 
     &__mob {
+        @media(min-width:1196px) {
+            display: none;
+        }
+
         padding-top: 14px;
 
         .title {
