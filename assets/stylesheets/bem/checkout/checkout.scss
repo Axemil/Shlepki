@@ -1,0 +1,137 @@
+.checkout {
+    position: relative;
+    padding-top: 16px;
+    background: #F6F6F6;
+    padding-bottom: 50px;
+
+    &:before {
+        content: '';
+        width: 100%;
+        background: linear-gradient(180deg, rgba(29, 159, 230, 0.06) 0%, rgba(204, 221, 255, 0) 100%);
+        height: 429px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 46px;
+        padding-top: 12px;
+        font-family: Fira Sans Condensed;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        line-height: 30px;
+        font-family: Fira Sans Condensed;
+        padding-bottom: 26px;
+    }
+
+    &__desktop {
+        display: flex;
+        justify-content: space-between;
+
+        &_inputs {
+            padding-top: 22px;
+            max-width: 587px;
+            width: 100%;
+        }
+    }
+}
+
+form {
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        p {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 18px;
+            color: #5C6773;
+        }
+
+        input {
+            font-size: 13px;
+            line-height: 18px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            width: 459px;
+            height: 44px;
+            padding-left: 17px;
+
+            &::placeholder {
+                color: #929292;
+            }
+        }
+
+        &-checkbox {
+            display: flex;
+            margin-bottom: 42px;
+
+            &_bg {
+                background: #DEE7ED;
+                border-radius: 10px;
+                height: 35px;
+                margin-bottom: 35px;
+
+                .checkbox {
+                    margin: 0;
+                    width: 50%;
+                    height: 100%;
+
+                    label {
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #5C6773;
+                        background-image: none;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #5C6773;
+                        font-family: Fira Sans Condensed;
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                    }
+
+                    input:checked+label {
+                        background: #FFFFFF;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        &-textarea {
+            padding-bottom: 20px;
+
+            &-title {
+                font-size: 13px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                text-transform: uppercase;
+                color: #25B4E5;
+            }
+
+            .wrap {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+    .border {
+        width: 100%;
+        height: 2px;
+        margin-top: 10px;
+        margin-bottom: 35px;
+        background-color: white;
+    }
+}

@@ -1,17 +1,17 @@
 .delivery {
-    background: linear-gradient(180deg,rgba(29,159,230,.06),#f6f6f6);
-    padding-top: 16px;
-    &__subtitle {
-        font-size: 18px;
-        line-height: 21px;
-        color: #25B4E5;
-        padding-bottom: 12px;
+  background: linear-gradient(180deg, rgba(29, 159, 230, 0.06), #f6f6f6);
+  padding-top: 16px;
+  &__subtitle {
+    font-size: 18px;
+    line-height: 21px;
+    color: #25b4e5;
+    padding-bottom: 12px;
+  }
+  .aboutus__list {
+    ul {
+      li {
+        padding-bottom: 18px;
+      }
     }
-    .aboutus__list {
-        ul {
-            li {
-                padding-bottom: 18px;
-            }
-        }
-    }
+  }
 }

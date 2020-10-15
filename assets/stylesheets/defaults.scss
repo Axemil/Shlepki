@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;;
+  font-family: "Open Sans", sans-serif;
   color: #000000;
   font-size: 14px;
   line-height: 20px;
@@ -8,14 +8,22 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-a, button, input, select, textarea, [contenteditable="true"], [tabindex] {
+a,
+button,
+input,
+select,
+textarea,
+[contenteditable="true"],
+[tabindex] {
   color: #071120;
   outline: none;
-  transition: .5s ease all;
+  transition: 0.5s ease all;
   resize: none;
   border: none;
   text-decoration: none;
@@ -25,14 +33,14 @@ a, button, input, select, textarea, [contenteditable="true"], [tabindex] {
 }
 
 // Turn Off Number Input Spinners
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-input[type=number] {
-  -moz-appearance:textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 input:-webkit-autofill,
