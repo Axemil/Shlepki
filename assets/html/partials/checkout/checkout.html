@@ -10,23 +10,26 @@
         <div class="checkout__title">
             <p>Оформление заказа</p>
         </div>
-        <form action="" class="checkout__desktop">
+        <form action="#" class="checkout__desktop">
             <div class="checkout__desktop_inputs">
                 <div class="wrap">
                     <p>Имя</p>
-                    <input type="text" placeholder="Введиете ваше имя ">
+                    <input id="userName" name="userName" type="text" class="required" placeholder="Введите ваше имя ">
                 </div>
                 <div class="wrap">
                     <p>Фамилия</p>
-                    <input type="text" placeholder="Введиете вашу фамилию">
+                    <input id="userLastName" name="userLastName" type="text" class="required"
+                        placeholder="Введите вашу фамилию">
                 </div>
                 <div class="wrap">
                     <p>Номер телефона</p>
-                    <input type="tel" placeholder="Введиете ваш номер телефона">
+                    <input id="userPhone" name="userPhone" type="text" class="required"
+                        placeholder="+38 (___) ___-__-__">
                 </div>
                 <div class="wrap">
                     <p>Email</p>
-                    <input type="email" placeholder="Введиете ваш Email">
+                    <input id="userEmail" name="userEmail" type="text" class="required"
+                        placeholder="Введите вашу фамилию">
                 </div>
                 <div class="border"></div>
                 <div class="checkout__subtitle">
@@ -99,73 +102,249 @@
                 <input type="submit" value="Подтвердить">
             </div>
             <div class="checkout__desktop_edit">
-                <a href="#" class="checkout__desktop_edit_link"></a>
-                <div class="checkout__desktop_edit_list">
-                    <ul>
-                        <li>
-                            <div class="checkout__desktop_edit_item">
-                                <div class="checkout__desktop_edit_item_img">
-                                    <img src="" alt="">
+                <div class="checkout__desktop_edit_wrap">
+                    <div class="checkout__desktop_edit_header">
+                        <a href="#" class="checkout__desktop_edit_link">Редактировать корзину</a>
+                    </div>
+                    <div class="checkout__desktop_edit_list">
+                        <ul>
+                            <li>
+                                <div class="checkout__desktop_edit_item">
+                                    <div class="checkout__desktop_edit_item_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="checkout__desktop_edit_item_title">
+                                        <p>Босоножки 00001-beige</p>
+                                        <span>3 ящика</span>
+                                    </div>
+                                    <div class="checkout__desktop_edit_item_price">
+                                        <p>480.00 ₴</p>
+                                    </div>
+                                    <button class="checkout__desktop_edit_item_remove">
+                                        <i class="i-delete"></i>
+                                    </button>
                                 </div>
-                                <div class="checkout__desktop_edit_item_title">
-                                    <p>Босоножки 00001-beige</p>
-                                    <span>3 ящика</span>
+                            </li>
+                            <li>
+                                <div class="checkout__desktop_edit_item">
+                                    <div class="checkout__desktop_edit_item_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="checkout__desktop_edit_item_title">
+                                        <p>Босоножки 00001-beige</p>
+                                        <span>3 ящика</span>
+                                    </div>
+                                    <div class="checkout__desktop_edit_item_price">
+                                        <p>480.00 ₴</p>
+                                    </div>
+                                    <button class="checkout__desktop_edit_item_remove">
+                                        <i class="i-delete"></i>
+                                    </button>
                                 </div>
-                                <div class="checkout__desktop_edit_item_price">
-                                    <p>480.00 ₴</p>
+                            </li>
+                            <li>
+                                <div class="checkout__desktop_edit_item">
+                                    <div class="checkout__desktop_edit_item_img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="checkout__desktop_edit_item_title">
+                                        <p>Босоножки 00001-beige</p>
+                                        <span>3 ящика</span>
+                                    </div>
+                                    <div class="checkout__desktop_edit_item_price">
+                                        <p>480.00 ₴</p>
+                                    </div>
+                                    <button class="checkout__desktop_edit_item_remove">
+                                        <i class="i-delete"></i>
+                                    </button>
                                 </div>
-                                <button class="checkout__desktop_edit_item_remove">
-                                    <i class="i-delete"></i>
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkout__desktop_edit_item">
-                                <div class="checkout__desktop_edit_item_img">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="checkout__desktop_edit_item_title">
-                                    <p>Босоножки 00001-beige</p>
-                                    <span>3 ящика</span>
-                                </div>
-                                <div class="checkout__desktop_edit_item_price">
-                                    <p>480.00 ₴</p>
-                                </div>
-                                <button class="checkout__desktop_edit_item_remove">
-                                    <i class="i-delete"></i>
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="checkout__desktop_edit_item">
-                                <div class="checkout__desktop_edit_item_img">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="checkout__desktop_edit_item_title">
-                                    <p>Босоножки 00001-beige</p>
-                                    <span>3 ящика</span>
-                                </div>
-                                <div class="checkout__desktop_edit_item_price">
-                                    <p>480.00 ₴</p>
-                                </div>
-                                <button class="checkout__desktop_edit_item_remove">
-                                    <i class="i-delete"></i>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="checkout__desktop_edit_footer">
+                        <div class="checkout__desktop_edit_footer_amount">
+                            <p>3 товара на сумму</p>
+                            <span>3000 ₴ </span>
+                        </div>
+                        <div class="border"></div>
+                        <div class="checkout__desktop_edit_footer_total">
+                            <p>Итого к оплате:</p>
+                            <span>3000 ₴ </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="checkout__desktop_edit_footer">
-                    <div class="checkout__desktop_edit_footer_amount">
-                        <p>3 товара на сумму</p>
-                        <span>3000 ₴ </span>
+            </div>
+        </form>
+        <form action="#" class="checkout__mob" id="steps-form">
+            <div>
+                <h3>Контактные данные</h3>
+                <section>
+                    <label for="userName"></label>
+                    <div class="wrap">
+                        <p>Имя</p>
+                        <input id="userName" name="userName" type="text" class="required"
+                            placeholder="Введите ваше имя ">
+                    </div>
+                    <div class="wrap">
+                        <p>Фамилия</p>
+                        <input id="userLastName" name="userLastName" type="text" class="required"
+                            placeholder="Введите вашу фамилию">
+                    </div>
+                    <div class="wrap">
+                        <p>Номер телефона</p>
+                        <input id="mobuserPhone" name="userPhone" type="text" class="required"
+                            placeholder="+38 (___) ___-__-__">
+                    </div>
+                    <div class="wrap">
+                        <p>Email</p>
+                        <input id="userEmail" name="userEmail" type="text" class="required"
+                            placeholder="Введите вашу фамилию">
+                    </div>
+                </section>
+                <h3>Доставка и оплата</h3>
+                <section>
+                    <div class="wrap-checkbox">
+                        <div class="checkbox">
+                            <input type="radio" id="mobnp" name="posta" class="required">
+                            <label for="mobnp">
+                                <p>Новая почта</p>
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="mobup" name="posta" class="required">
+                            <label for="mobup">
+                                <p>Укр почта</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="wrap-checkbox wrap-checkbox_bg">
+                        <div class="checkbox">
+                            <input type="radio" id="mobotd" name="posta-type" class="required">
+                            <label for="mobotd">
+                                <p>Доставка на отделение</p>
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="mobkur" name="posta-type" class="required">
+                            <label for="mobkur">
+                                <p>Доставка курьером</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <p>Город</p>
+                        <input type="text" placeholder="Введиете ваш город" class="required">
+                    </div>
+                    <div class="wrap">
+                        <p>Номер
+                            отделения</p>
+                        <input type="text" placeholder="Введите номер отделения" class="required">
                     </div>
                     <div class="border"></div>
-                    <div class="checkout__desktop_edit_footer_total">
-                        <p>Итого к оплате:</p>
-                        <span>3000 ₴ </span>
+                    <div class="checkout__subtitle">
+                        <p>Способ оплаты</p>
                     </div>
-                </div>
+                    <div class="wrap-checkbox">
+                        <div class="checkbox">
+                            <input type="radio" id="mobprivat" name="oplata">
+                            <label for="mobprivat">
+                                <p>Private 24 Online</p>
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="radio" id="mobnal" name="oplata">
+                            <label for="mobnal">
+                                <p>Наложеным платежом</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="wrap-textarea">
+                        <div class="wrap-textarea-title">
+                            <p>Комментарий к заказу</p>
+                        </div>
+                        <div class="wrap">
+                            <p>Комментарий к заказу</p>
+                            <textarea placeholder="Введиете ваш комментарий"></textarea>
+                        </div>
+                    </div>
+                </section>
+                <h3>Ваш заказ</h3>
+                <section>
+                    <div class="checkout__desktop_edit">
+                        <div class="checkout__desktop_edit_wrap">
+                            <div class="checkout__desktop_edit_header">
+                                <a href="#" class="checkout__desktop_edit_link">Редактировать корзину</a>
+                            </div>
+                            <div class="checkout__desktop_edit_list">
+                                <ul>
+                                    <li>
+                                        <div class="checkout__desktop_edit_item">
+                                            <div class="checkout__desktop_edit_item_img">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="checkout__desktop_edit_item_title">
+                                                <p>Босоножки 00001-beige</p>
+                                                <span>3 ящика</span>
+                                            </div>
+                                            <div class="checkout__desktop_edit_item_price">
+                                                <p>480.00 ₴</p>
+                                            </div>
+                                            <button class="checkout__desktop_edit_item_remove">
+                                                <i class="i-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkout__desktop_edit_item">
+                                            <div class="checkout__desktop_edit_item_img">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="checkout__desktop_edit_item_title">
+                                                <p>Босоножки 00001-beige</p>
+                                                <span>3 ящика</span>
+                                            </div>
+                                            <div class="checkout__desktop_edit_item_price">
+                                                <p>480.00 ₴</p>
+                                            </div>
+                                            <button class="checkout__desktop_edit_item_remove">
+                                                <i class="i-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkout__desktop_edit_item">
+                                            <div class="checkout__desktop_edit_item_img">
+                                                <img src="" alt="">
+                                            </div>
+                                            <div class="checkout__desktop_edit_item_title">
+                                                <p>Босоножки 00001-beige</p>
+                                                <span>3 ящика</span>
+                                            </div>
+                                            <div class="checkout__desktop_edit_item_price">
+                                                <p>480.00 ₴</p>
+                                            </div>
+                                            <button class="checkout__desktop_edit_item_remove">
+                                                <i class="i-delete"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="checkout__desktop_edit_footer">
+                                <div class="checkout__desktop_edit_footer_amount">
+                                    <p>3 товара на сумму</p>
+                                    <span>3000 ₴ </span>
+                                </div>
+                                <div class="border"></div>
+                                <div class="checkout__desktop_edit_footer_total">
+                                    <p>Итого к оплате:</p>
+                                    <span>3000 ₴ </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input id="address" name="address" type="submit">
+                </section>
             </div>
         </form>
     </div>

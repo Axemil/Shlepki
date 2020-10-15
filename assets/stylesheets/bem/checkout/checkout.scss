@@ -13,6 +13,7 @@
         top: 0;
         left: 0;
         z-index: 0;
+        pointer-events: none;
     }
 
     &__title {
@@ -31,13 +32,226 @@
     }
 
     &__desktop {
-        display: flex;
         justify-content: space-between;
+        align-items: flex-start;
+        display: none;
+
+        @media(min-width:1196px) {
+            display: flex;
+            display: none;
+        }
 
         &_inputs {
             padding-top: 22px;
             max-width: 587px;
             width: 100%;
+        }
+
+        &_edit {
+            width: 100%;
+            max-width: 539px;
+            position: sticky;
+            top: 10px;
+            padding-top: 22px;
+
+            &_wrap {
+                padding-left: 72px;
+                position: relative;
+
+                &:before {
+                    content: '';
+                    left: 0;
+                    top: -80px;
+                    width: 1px;
+                    height: 100%;
+                    position: absolute;
+                    background-color: white;
+                }
+            }
+
+            &_header {
+                position: relative;
+            }
+
+            &_link {
+                position: absolute;
+                top: -40px;
+                font-size: 13px;
+                line-height: 33px;
+                text-decoration-line: underline;
+                text-transform: uppercase;
+                color: #25B4E5;
+                font-family: Gotham Pro;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            &_item {
+                width: 100%;
+                background: #FFFFFF;
+                border-radius: 10px;
+                margin-bottom: 13px;
+                padding-left: 18px;
+                height: 68px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                position: relative;
+
+                &_img {
+                    width: 66px;
+                    height: 66px;
+                    margin-right: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &_title {
+                    width: 226px;
+                    overflow: hidden;
+                    padding-top: 12px;
+
+                    p {
+                        padding-bottom: 1px;
+                    }
+
+                    span {
+                        font-family: Fira Sans Condensed;
+                        text-align: right;
+                        color: #5C6773;
+                    }
+                }
+
+                &_price {
+                    font-family: Fira Sans Condensed;
+                    font-size: 18px;
+                    line-height: 22px;
+                    padding-top: 33px;
+                }
+
+                &_remove {
+                    position: absolute;
+                    top: 27px;
+                    right: 26px;
+                    background: none;
+                    color: #5C6773;
+
+                    &:hover {
+                        color: black;
+                    }
+                }
+            }
+
+            &_footer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding-top: 3px;
+
+                &_amount {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        font-family: Fira Sans Condensed;
+                        font-size: 18px;
+                        line-height: 24px;
+                        letter-spacing: 0.3px;
+                        color: #5C6773;
+                        padding-right: 60px;
+                    }
+
+                    span {
+                        font-family: Fira Sans Condensed;
+                        font-size: 22px;
+                        line-height: 25px;
+                        color: #000000;
+                    }
+                }
+
+                &_total {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 5px;
+
+                    p {
+                        font-family: Fira Sans Condensed;
+                        font-size: 18px;
+                        line-height: 24px;
+                        letter-spacing: 0.3px;
+                        color: #5C6773;
+                        padding-right: 28px;
+                    }
+
+                    span {
+                        font-family: Fira Sans Condensed;
+                        font-size: 34px;
+                        line-height: 44px;
+                        color: #1D9FE6;
+                    }
+                }
+            }
+        }
+    }
+
+    &__mob {
+        padding-top: 14px;
+
+        .title {
+            display: none;
+        }
+
+        .steps {
+            padding-bottom: 16px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        font-family: Fira Sans Condensed;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #5C6773;
+
+                        .current-info {
+                            display: none;
+                        }
+
+                        .number {
+                            width: 25px;
+                            height: 25px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: #5C6773;
+                            border-radius: 50%;
+                            margin-right: 6px;
+                            color: white;
+
+                        }
+                    }
+
+                    &.current {
+                        a {
+                            color: #25B4E5;
+
+                            span {
+                                background: #25B4E5;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -68,6 +282,15 @@ form {
             &::placeholder {
                 color: #929292;
             }
+        }
+
+        textarea {
+            background: #FFFFFF;
+            border-radius: 10px;
+            width: 586px;
+            height: 99px;
+            padding-top: 13px;
+            padding-left: 17px;
         }
 
         &-checkbox {
@@ -119,17 +342,53 @@ form {
                 text-decoration-line: underline;
                 text-transform: uppercase;
                 color: #25B4E5;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
 
             .wrap {
                 flex-direction: column;
                 align-items: flex-start;
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+                p {
+                    margin-bottom: 14px;
+                }
             }
         }
     }
+
+    input[type="submit"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #25B4E5;
+        box-shadow: 0px 2px 10px rgba(41, 96, 204, 0.3), 0px 2px 4px rgba(41, 96, 204, 0.3);
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 343px;
+        height: 44px;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
     .border {
         width: 100%;
-        height: 2px;
+        height: 1px;
         margin-top: 10px;
         margin-bottom: 35px;
         background-color: white;
