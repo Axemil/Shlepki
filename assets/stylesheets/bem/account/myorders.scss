@@ -1,0 +1,126 @@
+.myorders {
+  background: linear-gradient(180deg, rgba(29, 159, 230, 0.06), #f6f6f6);
+  padding-top: 16px;
+  padding-bottom: 68px;
+
+  &__container {
+    width: 100%;
+    max-width: 891px;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+
+    &_header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      background: #FFFFFF;
+      border-radius: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &.active {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+
+        .myorders__item_header_icon {
+          transform: rotate(-90deg);
+          color: #25B4E5;
+        }
+      }
+
+      &_stat {
+        font-family: Fira Sans Condensed;
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+      &_icon {
+        transform: rotate(90deg);
+        transition: $t;
+      }
+    }
+
+    &_body {
+      background-color: white;
+      display: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 8px;
+      padding-bottom: 22px;
+
+      &_footer {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-top: 1px solid #F8F8F8;
+        padding-top: 20px;
+        margin-top: 18px;
+
+        &_info {
+          font-family: Fira Sans Condensed;
+          max-width: 300px;
+          font-size: 15px;
+          line-height: 22px;
+          color: #5C6773;
+        }
+
+        &_price {
+          display: flex;
+          align-items: flex-end;
+
+          p {
+            font-family: Fira Sans Condensed;
+            font-size: 18px;
+            letter-spacing: 0.3px;
+            color: #5C6773;
+            line-height: 38px;
+            padding-right: 14px;
+          }
+
+          span {
+            font-family: Fira Sans Condensed;
+            font-size: 34px;
+            line-height: 44px;
+            color: #1D9FE6;
+          }
+        }
+      }
+    }
+
+    .basket__list_item {
+      padding: 0;
+
+      &_img {
+        width: 76px;
+        height: 76px;
+        margin-right: 53px;
+      }
+
+      &_kod {
+        width: 182px;
+      }
+
+      &_name {
+        width: 234px;
+      }
+
+      &_counter {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.green {
+  color: #05C35C;
+}
+
+.blue {
+  color: #25B4E5;
+}

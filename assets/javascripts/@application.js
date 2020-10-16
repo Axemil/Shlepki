@@ -5,4 +5,5 @@
   //= partials/checkout.js
   //= partials/jquery-steps.js
   //= partials/inputmask.js
+  //= partials/accordion.js
 })(jQuery);
