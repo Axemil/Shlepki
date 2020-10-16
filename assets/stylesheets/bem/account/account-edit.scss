@@ -1,0 +1,41 @@
+.account-edit {
+  background: linear-gradient(180deg, rgba(29, 159, 230, 0.06), #f6f6f6);
+  padding-top: 16px;
+  padding-bottom: 68px;
+
+  &_form {
+    padding-right: 20px;
+
+    .wrap {
+      input {
+        width: 337px;
+      }
+    }
+
+    &_footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 25px;
+
+      input {
+        width: 252px !important;
+      }
+
+      .canceling {
+        display: block;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #25B4E5;
+        margin-left: 73px;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

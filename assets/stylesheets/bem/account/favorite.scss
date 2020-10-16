@@ -1,0 +1,21 @@
+.favorite {
+  background: linear-gradient(180deg, rgba(29, 159, 230, 0.06), #f6f6f6);
+  padding-top: 16px;
+  padding-bottom: 68px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    left: -10px;
+    width: calc(100% + 20px);
+
+    .main-product-list_item {
+      width: 284px;
+      margin: 0 10px;
+      margin-bottom: 20px;
+    }
+  }
+}

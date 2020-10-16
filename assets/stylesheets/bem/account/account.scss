@@ -1,0 +1,119 @@
+.account {
+  background: linear-gradient(180deg, rgba(29, 159, 230, 0.06), #f6f6f6);
+  padding-top: 16px;
+  padding-bottom: 68px;
+
+  &__title {
+    font-family: Fira Sans Condensed;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    width: 100%;
+    max-width: 266px;
+    padding-right: 10px;
+    border-right: 1px solid #FFFFFF;
+    padding-bottom: 10px;
+
+    ul {
+      li {
+        a {
+          font-family: Fira Sans Condensed;
+          font-size: 20px;
+          line-height: 50px;
+          color: #5C6773;
+          display: flex;
+          align-items: center;
+
+          i {
+            margin-right: 11px;
+          }
+
+          &.active {
+            color: #25B4E5;
+          }
+
+          &:hover {
+            color: #25B4E5;
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    padding-left: 79px;
+    width: 100%;
+    max-width: 583px;
+
+    &_title {
+      font-family: Fira Sans Condensed;
+      font-size: 24px;
+      line-height: 30px;
+      padding-bottom: 16px;
+    }
+
+    &_item {
+      padding-bottom: 20px;
+
+      span {
+        font-family: Fira Sans Condensed;
+        font-size: 16px;
+        line-height: 19px;
+        color: #929292;
+        padding-bottom: 4px;
+      }
+
+      p {
+        font-size: 19px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &__settings {
+    border-left: 1px solid #FFFFFF;
+    padding-left: 61px;
+    padding-bottom: 90px;
+
+    ul {
+      li {
+        padding-bottom: 26px;
+
+        &:last-child {
+          a {
+            color: #F95050;
+          }
+        }
+
+        &:nth-child(2) {
+          a {
+            text-decoration: underline;
+          }
+        }
+
+        a {
+          font-family: Fira Sans Condensed;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #5C6773;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

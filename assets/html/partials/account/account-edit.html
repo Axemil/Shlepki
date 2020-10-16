@@ -1,4 +1,4 @@
-<section class="account">
+<section class="account-edit">
   <div class="main-bread-crumbs">
     <div class="main-bread-crumbs_wrapper">
       <a href="">Главная страница</a>
@@ -31,24 +31,28 @@
         <div class="account__info_title">
           <p>Контактные данные</p>
         </div>
-        <div class="account__info_items">
-          <div class="account__info_item">
-            <span>Имя</span>
-            <p>Леонид</p>
+        <form action="" class="account-edit_form">
+          <div class="wrap">
+            <p>Имя</p>
+            <input type="text" value="Леонид">
           </div>
-          <div class="account__info_item">
-            <span>Фамилия</span>
-            <p>Марквенко</p>
+          <div class="wrap">
+            <p>Фамилия</p>
+            <input type="text" value="Марквенко">
           </div>
-          <div class="account__info_item">
-            <span>Телефон</span>
-            <p>+38 (093) 676 35 35</p>
+          <div class="wrap">
+            <p>Номер телефона</p>
+            <input type="text" value="+38 (093) 676 35 35">
           </div>
-          <div class="account__info_item">
-            <span>Email</span>
-            <p>dfghjk@gmil.com</p>
+          <div class="wrap">
+            <p>Email</p>
+            <input type="email" value="dfghjk@gmail.com">
           </div>
-        </div>
+          <div class="account-edit_form_footer">
+            <div class="canceling">отмена</div>
+            <input type="submit" value="сохранить">
+          </div>
+        </form>
       </div>
       <div class="account__settings">
         <ul>
