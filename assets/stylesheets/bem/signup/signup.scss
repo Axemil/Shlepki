@@ -1,0 +1,31 @@
+.signup {
+  padding-top: 16px;
+  background: linear-gradient(180deg, rgba(29, 159, 230, .06), #f6f6f6);
+
+  &__title {
+    font-family: Fira Sans Condensed;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    padding-bottom: 40px;
+    padding-top: 12px;
+  }
+
+  &__form {
+    padding-bottom: 65px;
+    max-width: 946px;
+    margin: 0 auto;
+
+    .account-edit_form_footer {
+      flex-direction: column-reverse;
+      justify-content: center;
+
+      .canceling {
+        margin: 0;
+        margin-top: 24px;
+        text-decoration: underline;
+      }
+    }
+  }
+}

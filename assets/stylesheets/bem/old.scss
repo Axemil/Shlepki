@@ -470,7 +470,7 @@ input {
 .desktop-top-header {
     background: var(--main-color);
     color: #fff;
-    padding: 8px;
+    padding: 3px 0;
 }
 
 .containerBlock {
@@ -505,28 +505,55 @@ input {
 .wrapperBlock-lang {
     display: flex;
     align-items: center;
-}
-
-/* LANGUAGE-BUTTONS */
-.wrapperBlock-lang a:not(.active-lang) {
-    padding: 5px 16px;
-    background: var(--main-darker-color);
-    color: #48D0FF;
+    font-size: 13px;
     border-radius: 10px;
-}
 
-.active-lang {
-    background: #fff;
-    border-radius: 10px;
-    color: #25B4E5;
-    padding: 7px 20px;
-    margin: 0 -10px;
-    position: relative;
-    z-index: 10;
+    a {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #25B4E5;
+        background: #099BCD;
+        border: 1px solid #25B4E5;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 25px;
+        position: relative;
+        z-index: 0;
+
+        &:nth-child(2) {
+            border-left: none;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            width: 52px;
+            left: -2px;
+        }
+
+        &:nth-child(1) {
+            border-right: none;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            width: 52px;
+            right: -2px;
+        }
+
+        &.active-lang {
+            background: #FFFFFF;
+            border: none;
+            z-index: 1;
+            border-radius: 5px;
+            left: 0;
+        }
+    }
 }
 
 .desktop-middle-header {
-    padding: 21px 0;
+    padding: 19px 0;
 }
 
 
@@ -594,6 +621,18 @@ input {
 .desktop-searcher {
     position: relative;
     margin: 0 10px;
+    width: 465px;
+    height: 48px;
+
+    form {
+        height: 100%;
+        width: 100%;
+
+        label {
+            height: 100%;
+            width: 100%;
+        }
+    }
 }
 
 .desktop-search-result {
@@ -622,23 +661,24 @@ input {
 }
 
 .desktop-searcher-wrapperBlock {
-    padding: 5px 5px 5px 16px;
     border: 1px solid #E7E7E7;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .desktop-searcher-wrapperBlock input {
     border: none;
     outline: none;
     color: #000000;
-    font-size: 14px;
     font-size: 12px;
     font-family: var(--Open-font);
     width: 400px;
     margin: 0 5px 0 0;
-    max-width: 600px;
+    padding-left: 12px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .desktop-searcher-wrapperBlock input::placeholder {
@@ -647,10 +687,20 @@ input {
 }
 
 .desktop-searcher-wrapperBlock button {
-    padding: 10px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 10px;
     background: #F8F8F8;
+    margin-right: 6px;
+
+    img {
+        height: 25px;
+        width: 25px;
+    }
 }
 
 .desktop-middle-header>.containerBlock>div {
@@ -996,7 +1046,7 @@ input {
     align-content: center;
     width: 100%;
     left: 0;
-    top: 64px;
+    top: 59px;
 }
 
 .sub-menu {
@@ -1235,12 +1285,16 @@ body {
 }
 
 .main-products {
-    padding: 15px;
+    padding: 12px 15px;
     background: linear-gradient(180deg, rgba(29, 159, 230, 0.06) 0%, rgb(246, 246, 246) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @media (min-width: 1196px) {
+        padding: 15px;
+    }
 }
 
 .main-title {
@@ -1477,6 +1531,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
     overflow-x: scroll;
 
 }
@@ -1665,7 +1720,6 @@ body {
     z-index: 13;
     max-width: 400px;
     font-family: var(--Open-font);
-    font-family: 400;
     font-size: 12px;
 }
 
@@ -2263,10 +2317,10 @@ body {
 .cd-slider-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1120px;
     /* hide horizontal scrollbar on IE11 */
-    overflow-x: hidden;
+    overflow: hidden;
     background: #fff;
+    height: 100%;
 }
 
 .cd-slider>li {
@@ -2290,18 +2344,15 @@ body {
     opacity: 1;
 }
 
-.cd-slider .cd-svg-wrapper {
-    /* using padding Hack to fix bug on IE - svg height not properly calculated */
-    height: 0;
-    padding-bottom: 57.15%;
-}
-
 .cd-slider-wrapper svg {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+
+    image {
+        width: 100%;
+    }
 }
 
 /* -------------------------------- 
@@ -2353,6 +2404,12 @@ body {
 .cd-slider-navigation li:last-of-type {
     left: 10px;
     right: auto;
+}
+
+.prev-slide {
+    &:hover {
+        transform: scale(1.1)rotateY(-180deg) !important;
+    }
 }
 
 .cd-slider-navigation li:last-of-type a {

@@ -3,6 +3,4 @@
 //= ../../node_modules/jquery-steps/build/jquery.steps.js
 //= ../../node_modules/jquery-validation/dist/jquery.validate.js
 //= ../../node_modules/inputmask/dist/inputmask.js
-
-//= ./vendor_files/modernizr.js
-//= ./vendor_files/snap.svg-min.js
+//= ../../node_modules/ion-rangeslider/js/ion.rangeSlider.js
