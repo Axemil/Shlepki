@@ -1,8 +1,12 @@
 .hero-slider {
-  height: 400px;
+  height: 198px;
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 16px;
+
+  @media (min-width: 1197px) {
+    height: 400px;
+  }
 
   .cd-slider-wrapper {
     max-width: none;
@@ -23,7 +27,12 @@
             height: auto;
 
             image {
-              width: 100%;
+              height: 100%;
+
+              @media (min-width: 1197px) {
+                width: 100%;
+                height: auto;
+              }
             }
           }
         }
@@ -41,6 +50,8 @@
   }
 
   .cd-slider-navigation {
+    display: none;
+
     li {
       height: 100%;
       right: 0;
