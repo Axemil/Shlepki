@@ -5,4 +5,5 @@
   //= partials/jquery-steps.js
   //= partials/inputmask.js
   //= partials/accordion.js
+  //= partials/popup.js
 })(jQuery);

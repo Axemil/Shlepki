@@ -370,6 +370,7 @@ form {
         &__row {
             display: flex;
             justify-content: space-between;
+            position: relative;
 
             .wrap {
                 flex-direction: column;
