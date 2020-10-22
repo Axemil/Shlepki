@@ -1630,6 +1630,7 @@ body {
     padding: 15px;
     position: relative;
     background: #fff;
+    padding-top: 35px;
 }
 
 .main-description_title {
@@ -3009,11 +3010,25 @@ footer {
         max-width: 1196px;
         width: 100%;
         margin: 0 auto;
+
+        .main-product-list {
+            width: 932px !important;
+            justify-content: flex-start;
+            position: relative;
+            right: -10px;
+        }
+
+        .main-product-list_item {
+            width: 284px !important;
+            margin-left: 10px !important;
+            margin-right: 10px !important;
+            margin-bottom: 20px !important;
+        }
     }
 
     .main-katalog-wrapper>*:first-child {
         padding: 15px;
-        width: 30%;
+        width: 284px;
     }
 
     .filter-item_label {
@@ -3029,7 +3044,7 @@ footer {
     .main-desktop-filter {
         display: block;
         background: #fff;
-        margin: 0 20px 0 0;
+        margin: 0 5px 0 0;
         border-radius: 16px;
     }
 
