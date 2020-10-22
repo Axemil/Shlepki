@@ -6,4 +6,5 @@
   //= partials/inputmask.js
   //= partials/accordion.js
   //= partials/popup.js
+  //= partials/btn.js
 })(jQuery);

@@ -253,7 +253,9 @@ a {
             border-radius: 10px;
             background: #F6F6F6;
             cursor: pointer;
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             &:last-child {
                 background: #25B4E5;

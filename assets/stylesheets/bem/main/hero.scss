@@ -4,7 +4,7 @@
   overflow: hidden;
   border-radius: 16px;
 
-  @media (min-width: 1197px) {
+  @media (min-width: 1196px) {
     height: 400px;
   }
 
@@ -29,7 +29,7 @@
             image {
               height: 100%;
 
-              @media (min-width: 1197px) {
+              @media (min-width: 1196px) {
                 width: 100%;
                 height: auto;
               }

@@ -53,3 +53,8 @@
 .i-mail2 {
   @include icon("\e90d", "icomoon");
 }
+
+.i-shop,
+.product-button-cart {
+  @include icon("\e90e", "icomoon");
+}

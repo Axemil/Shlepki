@@ -13,11 +13,14 @@
   overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
-  transition: $t;
 
   &.active {
     opacity: 1;
     visibility: visible;
+
+    .popup__wrap {
+      opacity: 1;
+    }
   }
 
   &__wrap {
@@ -28,6 +31,8 @@
     border-radius: 20px;
     position: relative;
     padding: 45px 0;
+    opacity: 0;
+    transition: $t;
   }
 
   &__close {
