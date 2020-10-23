@@ -266,6 +266,11 @@ form {
         justify-content: space-between;
         margin-bottom: 25px;
 
+        .a-dropdown {
+            width: 100%;
+            max-width: 459px;
+        }
+
         p {
             font-weight: 600;
             font-size: 13px;
