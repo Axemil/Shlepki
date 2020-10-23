@@ -4,3 +4,4 @@
 //= ../../node_modules/jquery-validation/dist/jquery.validate.js
 //= ../../node_modules/inputmask/dist/inputmask.js
 //= ../../node_modules/ion-rangeslider/js/ion.rangeSlider.js
+//= ../../node_modules/select2/dist/js/select2.full.js

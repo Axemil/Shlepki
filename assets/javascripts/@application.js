@@ -7,4 +7,5 @@
   //= partials/accordion.js
   //= partials/popup.js
   //= partials/btn.js
+  //= partials/select2.js
 })(jQuery);
