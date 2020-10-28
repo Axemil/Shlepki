@@ -22,6 +22,7 @@
         line-height: 46px;
         padding-top: 12px;
         font-family: Fira Sans Condensed;
+        padding-left: 20px;
     }
 
     &__subtitle {
@@ -374,8 +375,13 @@ form {
 
         &__row {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             position: relative;
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
+
 
             .wrap {
                 flex-direction: column;

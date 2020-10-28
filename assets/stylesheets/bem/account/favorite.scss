@@ -12,10 +12,22 @@
     right: -10px;
     width: 912px;
 
+
+    @media (max-width:900px){
+      right: 0px;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     .main-product-list_item {
       width: 284px;
       margin: 0 10px;
       margin-bottom: 20px;
+
+      @media (max-width:900px){
+        width: 46%;
+      }
     }
   }
 }

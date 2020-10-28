@@ -48,6 +48,11 @@
     .container {
       max-width: 710px;
     }
+
+    @media (max-width: 1196px) {
+      padding-right: 24px;
+      padding-left: 15px;
+    }
   }
 
   &__title {
@@ -116,4 +121,5 @@
       }
     }
   }
+  
 }

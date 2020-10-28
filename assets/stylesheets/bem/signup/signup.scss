@@ -10,6 +10,10 @@
     line-height: 46px;
     padding-bottom: 40px;
     padding-top: 12px;
+
+    @media (max-width: 1196px) {
+      padding-left: 20px;
+    }
   }
 
   &__form {

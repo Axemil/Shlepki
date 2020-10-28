@@ -1681,6 +1681,10 @@ body {
 .main-bread-crumbs {
     width: 100%;
     padding: 0 0 15px 0;
+
+    @media (max-width: 1196px) {
+        padding-left: 20px;
+      }
 }
 
 .main-bread-crumbs_wrapper {
@@ -2341,6 +2345,46 @@ body {
     margin: 20px 0 0 0;
 }
 
+.main-list_brands {
+    padding: 0 15px;
+}
+
+.main-list_wrapper_brands{
+    max-width: 1170px;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-list_item{
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+.main-list_item a{
+    display: block;
+    text-align: center;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-list_item a img{
+    width: 100%;
+}
+.main-list_item_img_wrapper{
+    width: 100%;
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 16px;
+}
+.main-list_item p{
+    margin: 20px 0 0 0;
+    font-family: var(--Fira-font);
+    font-weight: 600;
+    font-size: 14px;
+}
 
 /* SVG SLIDER */
 

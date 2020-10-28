@@ -4,8 +4,16 @@
   padding-bottom: 68px;
 
   &__container {
+
     width: 100%;
     max-width: 891px;
+
+    .accordion li{
+      @media (max-width:900px){
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
   }
 
   &__item {
