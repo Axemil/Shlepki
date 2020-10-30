@@ -52,6 +52,10 @@ a {
             margin-bottom: 8px;
             padding-left: 133px;
 
+            @media (max-width: 900px) {
+                display: none;
+            }
+
             &_item {
                 font-size: 12px;
                 line-height: 14px;

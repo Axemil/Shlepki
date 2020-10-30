@@ -7,6 +7,10 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 27px;
+
+    @media (max-width:900px) {
+      display: block;
+    }
   }
 
   &__info {
@@ -16,6 +20,11 @@
 
     &_item {
       padding-bottom: 32px;
+
+
+      @media (max-width:900px) {
+        display: flex;
+      }
 
       i {
         color: #25b4e5;
@@ -28,6 +37,10 @@
         line-height: 25px;
         font-family: Fira Sans Condensed;
         padding-top: 5px;
+
+        @media (max-width:900px) {
+          margin-left: 20px;
+        }
       }
     }
   }

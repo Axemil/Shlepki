@@ -1352,6 +1352,7 @@ body {
     width: 100%;
     max-width: 1196px;
 
+
 }
 
 .main-product-list_item {
@@ -1362,6 +1363,11 @@ body {
     border-radius: 16px;
     height: 439px;
     position: relative;
+
+
+    @media (max-width: 900px){
+        height: 100%;
+    }
 }
 
 .main-product-list_item>* {
@@ -1479,6 +1485,8 @@ body {
     left: 9px;
     right: 9px;
     flex-direction: row-reverse;
+    position: initial;
+    margin-bottom: 4px !important;
 
     &:before {
         font-size: 20px;
@@ -3045,6 +3053,7 @@ footer {
 
     .main-product-list_item {
         padding: 19px;
+        height: 100%;
     }
 
     .main-katalog-wrapper {
@@ -3499,6 +3508,8 @@ footer {
         font-size: 16px;
     }
 }
+
+
 
 /* for-big-desktop-up */
 @media only screen and (min-width: 1800px) {}

@@ -7,9 +7,21 @@
     justify-content: space-between;
     padding-top: 26px;
 
+
+    @media (max-width: 1196px) {
+      overflow: scroll;
+      width: 100%;
+    }
+
     &_item {
       width: 100%;
       max-width: 302px;
+      @media (max-width: 1196px) {
+        min-width: 230px;
+        max-width: none;
+        overflow: scroll;
+        flex-wrap: nowrap;
+      }
 
       &_img {
         img {
