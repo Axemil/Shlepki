@@ -218,7 +218,25 @@
                 display: flex;
                 justify-content: space-between;
 
+                @media (max-width:900px) {
+                    overflow: scroll;
+                    width: 100%;
+                    
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+
                 li {
+
+                    @media (max-width:900px) {
+                        min-width: fit-content;
+                        overflow: scroll;
+                        flex-wrap: nowrap;
+                        max-width: none;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+
                     a {
                         display: flex;
                         align-items: center;
@@ -257,11 +275,22 @@
                 }
             }
         }
+
+        .actions{
+            color:red;
+        }
     }
 }
 
 form {
     .wrap {
+
+        @media(max-width:900px){
+            display:block;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -280,6 +309,11 @@ form {
         }
 
         input {
+            @media(max-width:900px){
+                width: 100%;
+                margin-bottom: 2px;
+            }
+
             font-size: 13px;
             line-height: 18px;
             background: #FFFFFF;

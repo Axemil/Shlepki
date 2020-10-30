@@ -1850,6 +1850,10 @@ body {
     border-radius: 10px;
     cursor: pointer;
     z-index: 1;
+
+    @media (max-width:900px) {
+        padding: 10px 5px;
+    }
 }
 
 .a-dropdown__items {
@@ -2799,9 +2803,9 @@ footer {
 
     /* MAIN */
 
-    /* .a-dropdown__selected {
+    .a-dropdown__selected {
         font-size: 10px;
-    } */
+    } 
 
 }
 
