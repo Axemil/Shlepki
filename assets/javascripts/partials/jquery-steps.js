@@ -1,19 +1,22 @@
 $(document).ready(function () {
 
+  jQuery.extend(jQuery.validator.messages, {required: 'Это поле необходимо.'});
+
   var form = $("#steps-form");
   form.validate({
-    errorPlacement: function errorPlacement(error, element) { element.before(error); },
-    // rules: {
-    //   confirm: {
-    //     equalTo: "#password"
-    //   }
-    // }
+    errorPlacement: function errorPlacement(error, element) {
+      element.parent().prepend(error); 
+    }
   });
   form.children("div").steps({
     headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
     onStepChanging: function (event, currentIndex, newIndex) {
+      if (currentIndex > newIndex)
+        {
+            return true;
+        }
       form.validate().settings.ignore = ":disabled,:hidden";
       return form.valid();
     },
@@ -23,6 +26,10 @@ $(document).ready(function () {
     },
     onFinished: function (event, currentIndex) {
       // alert("Submitted!");
+    },
+    labels: {
+      next: "Далее",
+      finish: "Подтвердить"
     }
   });
   $.each($('.number'), function () {

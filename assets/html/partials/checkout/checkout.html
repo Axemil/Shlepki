@@ -205,7 +205,7 @@
                 <section>
                     <div class="wrap-checkbox">
                         <div class="checkbox">
-                            <input type="radio" id="mobnp" name="posta" class="required">
+                            <input checked type="radio" id="mobnp" name="posta" class="required">
                             <label for="mobnp">
                                 <p>Новая почта</p>
                             </label>
@@ -219,7 +219,7 @@
                     </div>
                     <div class="wrap-checkbox wrap-checkbox_bg">
                         <div class="checkbox">
-                            <input type="radio" id="mobotd" name="posta-type" class="required">
+                            <input checked type="radio" id="mobotd" name="posta-type" class="required">
                             <label for="mobotd">
                                 <p>Доставка на отделение</p>
                             </label>
@@ -272,9 +272,6 @@
                 <section>
                     <div class="checkout__desktop_edit">
                         <div class="checkout__desktop_edit_wrap">
-                            <div class="checkout__desktop_edit_header">
-                                <a href="#" class="checkout__desktop_edit_link">Редактировать корзину</a>
-                            </div>
                             <div class="checkout__desktop_edit_list">
                                 <ul>
                                     <li>
@@ -282,12 +279,10 @@
                                             <div class="checkout__desktop_edit_item_img">
                                                 <img src="" alt="">
                                             </div>
-                                            <div class="checkout__desktop_edit_item_title">
-                                                <p>Босоножки 00001-beige</p>
-                                                <span>3 ящика</span>
-                                            </div>
-                                            <div class="checkout__desktop_edit_item_price">
-                                                <p>480.00 ₴</p>
+                                            <div class="checkout__desktop_edit_item_info">
+                                                <div class="checkout__desktop_edit_item_info_title">Босоножки 00001-beige</div>
+                                                <div class="checkout__desktop_edit_item_info_count">3 ящика</div>
+                                                <div class="checkout__desktop_edit_item_info_price">480.00 ₴</div>
                                             </div>
                                             <button class="checkout__desktop_edit_item_remove">
                                                 <i class="i-delete"></i>
@@ -299,12 +294,10 @@
                                             <div class="checkout__desktop_edit_item_img">
                                                 <img src="" alt="">
                                             </div>
-                                            <div class="checkout__desktop_edit_item_title">
-                                                <p>Босоножки 00001-beige</p>
-                                                <span>3 ящика</span>
-                                            </div>
-                                            <div class="checkout__desktop_edit_item_price">
-                                                <p>480.00 ₴</p>
+                                            <div class="checkout__desktop_edit_item_info">
+                                                <div class="checkout__desktop_edit_item_info_title">Босоножки 00001-beige</div>
+                                                <div class="checkout__desktop_edit_item_info_count">3 ящика</div>
+                                                <div class="checkout__desktop_edit_item_info_price">480.00 ₴</div>
                                             </div>
                                             <button class="checkout__desktop_edit_item_remove">
                                                 <i class="i-delete"></i>
@@ -316,12 +309,10 @@
                                             <div class="checkout__desktop_edit_item_img">
                                                 <img src="" alt="">
                                             </div>
-                                            <div class="checkout__desktop_edit_item_title">
-                                                <p>Босоножки 00001-beige</p>
-                                                <span>3 ящика</span>
-                                            </div>
-                                            <div class="checkout__desktop_edit_item_price">
-                                                <p>480.00 ₴</p>
+                                            <div class="checkout__desktop_edit_item_info">
+                                                <div class="checkout__desktop_edit_item_info_title">Босоножки 00001-beige</div>
+                                                <div class="checkout__desktop_edit_item_info_count">3 ящика</div>
+                                                <div class="checkout__desktop_edit_item_info_price">480.00 ₴</div>
                                             </div>
                                             <button class="checkout__desktop_edit_item_remove">
                                                 <i class="i-delete"></i>
@@ -342,8 +333,13 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="checkout_submit">
+                            <input id="address" name="address" type="submit">
+                        </div>
+                        <div class="checkout__desktop_edit_busket">
+                            <a href="#" class="checkout__desktop_edit_link_mobile">Редактировать корзину</a>
+                        </div>
                     </div>
-                    <input id="address" name="address" type="submit">
                 </section>
             </div>
         </form>

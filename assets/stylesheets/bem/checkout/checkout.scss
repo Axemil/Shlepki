@@ -220,7 +220,7 @@
 
                 @media (max-width:900px) {
                     overflow: scroll;
-                    width: 100%;
+                    width: auto;
                     
                     padding-right: 10px;
                     padding-left: 10px;
@@ -233,8 +233,8 @@
                         overflow: scroll;
                         flex-wrap: nowrap;
                         max-width: none;
-                        margin-right: 10px;
-                        margin-left: 10px;
+                        padding-right: 20px;
+                        padding-left: 20px;
                     }
 
                     a {
@@ -276,19 +276,142 @@
             }
         }
 
+        .checkout_submit{
+            margin-top: 20px;
+            padding: 0px 20px;
+
+            #address{
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+        .content{
+            .checkout__desktop_edit{
+                .checkout__desktop_edit_wrap{
+                    width: 100%;
+                    padding: 0;
+                    .checkout__desktop_edit_list{
+                        ul{
+                            margin-left: 20px;
+                            margin-right: 20px;
+                            li{
+                                .checkout__desktop_edit_item{
+                                    padding-top: 8px;
+                                    padding-bottom: 8px;
+                                    height: 100%;
+                                    .checkout__desktop_edit_item_img{
+
+                                    }
+                                    .checkout__desktop_edit_item_info{
+                                        .checkout__desktop_edit_item_info_title{
+                                            font-size: 14px
+                                        }
+                                        .checkout__desktop_edit_item_info_count{
+                                            color: #5C6773;
+                                            font-family: Fira Sans Condensed;
+                                            font-size: 14px;
+                                        }
+                                        .checkout__desktop_edit_item_info_price{
+                                            font-family: Fira Sans Condensed;
+                                            font-size: 18px;
+                                        }
+                                    }
+                                    .checkout__desktop_edit_item_remove{
+                                        top:12px;
+                                        right: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .checkout__desktop_edit_footer{
+                        margin: 20px;
+                    }
+                }
+                .checkout_submit{
+
+                }
+                .checkout__desktop_edit_busket{
+                    display: block;
+                    position: relative;
+                    height: 30px;
+                    margin-top: 30px;
+                    .checkout__desktop_edit_link_mobile{
+                        display: block;
+                        position: relative;
+                        
+                        font-family: Open Sans,sans-serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        font-size: 13px;
+                        line-height: 18px;
+                        text-transform: uppercase;
+                        color: #25b4e5;
+                        cursor: pointer;
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                        outline: none;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
         .actions{
-            color:red;
+            ul{
+                margin: 0px 20px;
+                li{
+                    margin: 0px 80px;
+                    -webkit-tap-highlight-color: transparent;
+                    box-sizing: border-box;
+                    font-family: inherit;
+                    overflow: visible;
+                    outline: none;
+                    transition: all .5s ease;
+                    resize: none;
+                    border: none;
+                    text-decoration: none;
+                    padding: 0;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #25b4e5;
+                    box-shadow: 0 2px 10px rgba(41,96,204,.3),0 2px 4px rgba(41,96,204,.3);
+                    border-radius: 10px;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #fff;
+                    width: auto;
+                    height: 44px;
+                    margin-top: 10px;
+
+                    &:first-child{
+                        display: none !important;
+                    }
+                    
+                    &:last-child{
+                        display: none !important;
+                    }
+                }
+            }
         }
     }
 }
 
 form {
+
     .wrap {
 
         @media(max-width:900px){
             display:block;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
         display: flex;
@@ -427,6 +550,17 @@ form {
                 }
             }
         }
+
+        label.error{
+            color:red;
+        }
+    }
+
+    .wrap-checkbox{
+        @media(max-width:900px){
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
 
     input[type="submit"] {
@@ -450,11 +584,24 @@ form {
         }
     }
 
+    .checkout{
+        &__subtitle{
+            @media(max-width:900px){
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .wrap-textarea{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .border {
         width: 100%;
         height: 1px;
         margin-top: 10px;
-        margin-bottom: 35px;
+        margin-bottom: 15px;
         background-color: white;
     }
 }
