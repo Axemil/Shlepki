@@ -1008,6 +1008,22 @@ input {
     align-items: center;
 }
 
+.ukrainian-flag {
+    margin-left: 5px;
+    .ukrainian-flag_blue{
+        background-color: #338AF3;
+        width: 20px;
+        height: 10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .ukrainian-flag_yellow{
+        background-color: #FFDA44;
+        width: 20px;
+        height: 10px;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
 .desktop-main-header>nav>ul>li:hover .sub-menu_wrapper {
     display: flex;
 }
@@ -1471,7 +1487,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 5px 0 0 0 !important;
+    margin: 18px 0 0 0 !important;
     background: var(--main-color);
     color: #fff !important;
     text-transform: uppercase;
@@ -2370,7 +2386,7 @@ body {
     flex-wrap: wrap;
 }
 .main-list_item{
-    width: 100%;
+    width: 46%;
     margin: 0 0 10px 0;
 }
 .main-list_item a{
@@ -2764,6 +2780,43 @@ footer {
 
 .main-desktop-filter {
     display: none;
+}
+
+.select-custom-city{
+    width:100%;
+    background: #fff;
+    border-radius: 10px;
+    width: 459px;
+    height: 44px;
+    padding-left: 17px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.select2-results{
+        
+        .select2-results__option[aria-selected="true"]{
+            color:#1d9fe6 !important;
+            background-color: white !important;
+        }
+}
+
+.select2-results__option--highlighted{
+        background-color: white !important;
+        color: black !important;
+      
+}
+
+.select2-search{
+    display: none;
+}
+
+.select2-selection--single{
+    border: none !important;
+}
+
+.select2-dropdown{
+    border: none !important;
 }
 
 /*////////////////////////////////////////////////////////////////*/
