@@ -34,12 +34,12 @@ $(document).ready(function () {
         $('.mobile-menu').addClass('mobile-menu_unactive');
     })
 
-    $('.mobile-menu-nav>ul>li').click(function(e) {
+    $('.mobile-menu-nav>ul>li.nav-to-list').click(function(e) {
         e.preventDefault();
         $(this).find('.mobile-catalog-popup').addClass('active');
     })
 
-    $('.mobile-menu-nav>ul>li>.mobile-catalog-popup>.mobile-catalog-popup_header').click(function(e) {
+    $('.mobile-menu-nav>ul>li.nav-to-list>.mobile-catalog-popup>.mobile-catalog-popup_header').click(function(e) {
         e.stopPropagation();
         $(this).parent().removeClass('active');
     })
