@@ -34,6 +34,16 @@ $(document).ready(function () {
         $('.mobile-menu').addClass('mobile-menu_unactive');
     })
 
+    $('.mobile-menu-nav>ul>li').click(function(e) {
+        e.preventDefault();
+        $(this).find('.mobile-catalog-popup').addClass('active');
+    })
+
+    $('.mobile-menu-nav>ul>li>.mobile-catalog-popup>.mobile-catalog-popup_header').click(function(e) {
+        e.stopPropagation();
+        $(this).parent().removeClass('active');
+    })
+
     //SWIPRER ON MAIN PAGE
     var swiper = new Swiper('.swiper-container', {
         grabCursor: true,
