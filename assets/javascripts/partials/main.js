@@ -44,6 +44,10 @@ $(document).ready(function () {
         $(this).parent().removeClass('active');
     })
 
+    $('.mobile-menu-nav>ul>li.nav-to-list>.mobile-catalog-popup>.mobile-catalog-popup_body').click(function(e) {
+        e.stopPropagation();
+    })
+
     //SWIPRER ON MAIN PAGE
     var swiper = new Swiper('.swiper-container', {
         grabCursor: true,
