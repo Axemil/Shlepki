@@ -17,7 +17,7 @@
       right: 0px;
       width: 100%;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     .main-product-list_item {
@@ -27,6 +27,7 @@
 
       @media (max-width:900px){
         width: 46%;
+        margin: 0 0;
       }
     }
   }
