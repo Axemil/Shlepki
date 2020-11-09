@@ -16,9 +16,13 @@ $(document).ready(function () {
     $('#search-mobile').click(() => {
         $('.mobile-header_search_wrapper').toggleClass('pop-up-active-block');
     })
-    // $('.mobile-header_search_wrapper').click(() => {
-    //     $('.mobile-header_search_wrapper').removeClass('pop-up-active-block');
-    // })
+    $('.mobile-header_search_wrapper').click(() => {
+        console.log('asd');
+        $('.mobile-header_search_wrapper').removeClass('pop-up-active-block');
+    })
+    $('.mobile-header_search_wrapper .mobile-header_search').click((e) => {
+        e.stopPropagation();
+    })
 
     $('#abort-input').click(() => {
         $('#searcher').val('');
