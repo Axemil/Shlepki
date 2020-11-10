@@ -28,6 +28,17 @@ $(document).ready(function () {
         $('#searcher').val('');
     })
 
+    let $searchElement = $('.mobile-header_search_wrapper .mobile-header_search');
+    let headerHeight = 56;
+    $(window).scroll((e) => {
+        let top = $(this).scrollTop();
+        let marginTop = 0;
+        if(top <= headerHeight){
+            marginTop = headerHeight - top;
+        }
+        $searchElement.css('margin-top', marginTop);
+    })
+
     // MOBILE MENU
 
     $('#open_mobile-menu').click(() => {
