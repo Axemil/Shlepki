@@ -211,6 +211,12 @@ $(document).ready(function () {
             // /* If the user clicks anywhere outside the select box,
             // then close all select boxes: */
             document.addEventListener("click", this.closeAllSelect);
+
+            let _this = this;
+            const bodyElement = document.getElementsByTagName("body")[0];
+            bodyElement.addEventListener("click", (e) => {
+                _this.closeAllSelect(e.target);
+            });
         }
 
         createElement(tag, className, content) {
@@ -319,5 +325,18 @@ $(document).ready(function () {
             to: e.target.value
         })
     })
+
+    $('#searchingField').focusin(function(e) {
+        let searchValue = $(this).val();
+        if(searchValue){
+            $('.desktop-searcher .desktop-search-result').show();
+        }
+    });
+
+    $('body').click(function(e) {
+        if($(e.target).parents('.desktop-searcher').length == 0){
+            $('.desktop-searcher .desktop-search-result').hide();
+        }
+    });
 
 });
