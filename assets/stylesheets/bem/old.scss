@@ -73,7 +73,31 @@ header {
     max-width: 1196px;
     width: 100%;
     margin: auto;
+
+    &_wrapper{
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    .showMore{
+        text-align: center;
+        margin-bottom: 10px;
+
+        a{
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            line-height: 33px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: #25b4e5;
+            font-family: Open Sans,sans-serif;
+        }
+    }
 }
+
+
 
 input {
     background: inherit;
