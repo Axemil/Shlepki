@@ -23,19 +23,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    p {
-      width: 20%;
-    }
-
-    .form__input{
-      width: 70%;
-    }
-
-    .text-danger{
-      width: 90%;
-      color:red;
-      margin-top: 6px;
-    }
 
     @media (max-width:900px){
       display: block;
@@ -104,6 +91,22 @@
   }
 
   &__info {
+
+    .wrap{
+      p {
+        width: 20%;
+      }
+  
+      .form__input{
+        width: 70%;
+      }
+  
+      .text-danger{
+        width: 90%;
+        color:red;
+        margin-top: 6px;
+      }
+    }
 
     @media (max-width:900px){
       padding-left: 0px;
